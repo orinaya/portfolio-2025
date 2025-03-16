@@ -26,6 +26,7 @@ function AboutComponent() {
   return (
     <>
       <div
+        id="a-propos"
         className={` left-0 w-full bg-milk-980 text-mocha-200 rounded-t-3xl z-10 transform mt-[100vh] transition-transform duration-300 ${
           scrolled ? "translate-y-0" : "translate-y-16"
         }`}

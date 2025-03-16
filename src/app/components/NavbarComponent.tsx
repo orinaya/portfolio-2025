@@ -7,32 +7,20 @@ function NavbarComponent() {
       <nav className="fixed w-full z-50 flex justify-between items-center py-4 px-8">
         {/* Logo */}
         <div className="flex items-center">
-          <Link
-            href="/"
-            className="text-strawberry-700  text-2xl font-bold font-michael"
-          >
+          <Link href="/" className="text-strawberry-700  text-2xl font-bold font-michael">
             ori
           </Link>
         </div>
 
         {/* nav */}
         <div className="flex gap-8 items-center">
-          <Link
-            href="/a-propos"
-            className="hover:text-strawberry-700  transition font-medium"
-          >
+          <Link href="/#a-propos" className="hover:text-strawberry-700  transition font-medium">
             À propos
           </Link>
-          <Link
-            href="/parcours"
-            className="hover:text-strawberry-700  transition font-medium"
-          >
+          <Link href="/#parcours" className="hover:text-strawberry-700  transition font-medium">
             Mon parcours
           </Link>
-          <Link
-            href="/projets"
-            className="hover:text-strawberry-700  transition font-medium"
-          >
+          <Link href="/#projets" className="hover:text-strawberry-700  transition font-medium">
             Mes projets
           </Link>
         </div>
