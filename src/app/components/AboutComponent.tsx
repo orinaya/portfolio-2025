@@ -3,6 +3,7 @@ import Link from "next/link";
 import {useEffect, useState} from "react";
 
 import PassionsComponent from "./PassionsComponent";
+import TitleComponent from "./TitleComponent";
 
 function AboutComponent() {
   const [scrolled, setScrolled] = useState(false);
@@ -25,16 +26,13 @@ function AboutComponent() {
   return (
     <>
       <div
-        className={`min-h-screen bg-milk-980 text-mocha-200 rounded-t-3xl z-10 transform mt-[100vh] transition-transform duration-300 ${
+        className={` left-0 w-full bg-milk-980 text-mocha-200 rounded-t-3xl z-10 transform mt-[100vh] transition-transform duration-300 ${
           scrolled ? "translate-y-0" : "translate-y-16"
         }`}
       >
-        <div className="max-w-6xl mx-auto pt-32 px-8 pb-32 flex justify-between gap-12">
+        <div className=" max-w-6xl mx-auto pt-32 px-8 pb-32 flex justify-between gap-12">
           <div className="flex flex-col w-1/2">
-            <div className="text-center mb-12">
-              <span className="text-strawberry-700 uppercase tracking-wider">À propos</span>
-              <h2 className="text-4xl font-bold mt-2 font-michael">En quête d’alternance</h2>
-            </div>
+            <TitleComponent uptitle="À propos" title="En quête d’alternance" />
 
             <div className=" bg-[#FFFFFF] rounded-2xl p-8 self-stretch text-center justify-start">
               <p className="text-base font-light">
@@ -49,10 +47,9 @@ function AboutComponent() {
               <br />
               <br />
               <p className="text-base font-light">
-                <span className="text-base font-medium">Mon but ?</span>
-                Poursuivre mes études en
+                <span className="text-base font-medium">Mon but ?</span> Poursuivre mes études en{" "}
                 <strong className="font-medium">MBA Développeur Full-Stack</strong> et pourquoi pas,
-                vous rejoindre pour une alternance, et ce dès
+                vous rejoindre pour une alternance, et ce dès{" "}
                 <strong className="font-medium">septembre 2025</strong>.
               </p>
 
@@ -74,10 +71,7 @@ function AboutComponent() {
           </div>
 
           <div className="flex flex-col w-1/2">
-            <div className="text-center mb-12">
-              <span className="text-[#FF8FA3] uppercase tracking-wider">Passions & Hobbies</span>
-              <h2 className="text-4xl font-bold mt-2 font-michael">Explorer mon univers</h2>
-            </div>
+            <TitleComponent uptitle="Passions & Hobbies" title="Explorer mon univers" />
             <PassionsComponent />
           </div>
         </div>
