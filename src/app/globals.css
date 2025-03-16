@@ -1,26 +1,170 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "michael", sans-serif;
+  src: url("../app/assets/fonts/michael.ttf") format("truetype");
+}
+
 :root {
-  --background: #ffffff;
+  --background: #f8f6f6;
   --foreground: #171717;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-montserrat: var(--font-montserrat-sans);
+  --font-michael: "Michael", sans-serif;
+}
+@theme {
+  --color-mocha-50: hsl(0, 11%, 5%);
+  --color-mocha-100: hsl(0, 11%, 10%);
+  --color-mocha-200: hsl(0, 11%, 20%);
+  --color-mocha-300: hsl(0, 11%, 30%);
+  --color-mocha-400: hsl(0, 11%, 40%);
+  --color-mocha-500: hsl(0, 11%, 50%);
+  --color-mocha-600: hsl(0, 11%, 60%);
+  --color-mocha-700: hsl(0, 11%, 70%);
+  --color-mocha-800: hsl(0, 11%, 80%);
+  --color-mocha-900: hsl(0, 11%, 90%);
+  --color-mocha-950: hsl(0, 11%, 95%);
+
+  --color-strawberry-50: hsl(0, 70%, 5%);
+  --color-strawberry-100: hsl(0, 70%, 10%);
+  --color-strawberry-200: hsl(0, 70%, 20%);
+  --color-strawberry-300: hsl(0, 70%, 30%);
+  --color-strawberry-400: hsl(0, 70%, 40%);
+  --color-strawberry-500: hsl(0, 70%, 50%);
+  --color-strawberry-600: hsl(0, 70%, 60%);
+  --color-strawberry-700: hsl(0, 70%, 70%);
+  --color-strawberry-800: hsl(0, 70%, 80%);
+  --color-strawberry-900: hsl(0, 70%, 90%);
+  --color-strawberry-950: hsl(0, 70%, 95%);
+
+  --color-cremeBrulee-50: hsl(44, 88%, 5%);
+  --color-cremeBrulee-100: hsl(44, 88%, 10%);
+  --color-cremeBrulee-200: hsl(44, 88%, 20%);
+  --color-cremeBrulee-300: hsl(44, 88%, 30%);
+  --color-cremeBrulee-400: hsl(44, 88%, 40%);
+  --color-cremeBrulee-500: hsl(44, 88%, 50%);
+  --color-cremeBrulee-600: hsl(44, 88%, 60%);
+  --color-cremeBrulee-700: hsl(44, 88%, 70%);
+  --color-cremeBrulee-800: hsl(44, 88%, 80%);
+  --color-cremeBrulee-900: hsl(44, 88%, 90%);
+  --color-cremeBrulee-950: hsl(44, 88%, 95%);
+
+  --color-milk-50: hsl(0, 13%, 5%);
+  --color-milk-100: hsl(0, 13%, 10%);
+  --color-milk-200: hsl(0, 13%, 20%);
+  --color-milk-300: hsl(0, 13%, 30%);
+  --color-milk-400: hsl(0, 13%, 40%);
+  --color-milk-500: hsl(0, 13%, 50%);
+  --color-milk-600: hsl(0, 13%, 60%);
+  --color-milk-700: hsl(0, 13%, 70%);
+  --color-milk-800: hsl(0, 13%, 80%);
+  --color-milk-900: hsl(0, 13%, 90%);
+  --color-milk-950: hsl(0, 13%, 95%);
+  --color-milk-980: hsl(0, 13%, 98%);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #f8f6f6;
   }
+}
+
+p,
+li,
+ul,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.background-hero {
+  background: radial-gradient(
+    199.96% 85.18% at 61.07% 51.85%,
+    hsla(0, 70%, 74%, 0.5) 0%,
+    hsla(340, 100%, 80%, 0.1) 36.5%,
+    hsla(232, 31%, 45%, 0.4) 97.64%
+  );
+  background-size: 200% 200%;
+  animation: gradient-animation 10s ease infinite;
+  backdrop-filter: blur(8px);
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.title {
+  opacity: 0.85;
+  background: linear-gradient(
+    91deg,
+    #e25555 -2.89%,
+    #e87d7d 28.65%,
+    #f4bebe 102.69%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: -42px;
+}
+
+@keyframes scintillement-pulse-even {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    /* transform: scale(1.2); */
+  }
+}
+
+@keyframes scintillement-pulse-odd {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    /* transform: scale(1.2); */
+  }
+}
+
+.scintillant-even {
+  animation: scintillement-pulse-even 1s infinite alternate;
+}
+
+.scintillant {
+  animation: scintillement-pulse-odd 1s infinite alternate;
+}
+
+svg,
+path,
+ellipse {
+  width: 90%;
+  height: auto;
 }
