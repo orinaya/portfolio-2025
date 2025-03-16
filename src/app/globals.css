@@ -118,12 +118,7 @@ body {
 
 .title {
   opacity: 0.85;
-  background: linear-gradient(
-    91deg,
-    #e25555 -2.89%,
-    #e87d7d 28.65%,
-    #f4bebe 102.69%
-  );
+  background: linear-gradient(91deg, #e25555 -2.89%, #e87d7d 28.65%, #f4bebe 102.69%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -160,11 +155,4 @@ body {
 
 .scintillant {
   animation: scintillement-pulse-odd 1s infinite alternate;
-}
-
-svg,
-path,
-ellipse {
-  width: 90%;
-  height: auto;
 }
