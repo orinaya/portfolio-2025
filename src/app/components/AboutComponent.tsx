@@ -4,6 +4,7 @@ import {useEffect, useState} from "react";
 
 import PassionsComponent from "./PassionsComponent";
 import TitleComponent from "./TitleComponent";
+import ButtonParticle from "../particles/ButtonParticle";
 
 function AboutComponent() {
   const [scrolled, setScrolled] = useState(false);
@@ -56,17 +57,18 @@ function AboutComponent() {
 
               <p className="text-base font-light">
                 {" "}
-                !<br />
                 <br />
-                Si mon profil vous intéresse, n’hésitez pas à me contacter ✨
+                <br />
+                Si mon profil vous intéresse, <br />
+                n’hésitez pas à me contacter ! ✨
               </p>
               <div className="flex justify-center mt-4">
-                <Link
-                  href="/contact"
-                  className="bg-[#FF8FA3] text-white px-6 py-2 rounded-full hover:bg-[#ff7a91] transition"
-                >
-                  Contact
-                </Link>
+                <ButtonParticle
+                  title="Contact"
+                  colorBg="bg-strawberry-800"
+                  colorText="text-strawberry-200"
+                  routeLink="#"
+                />
               </div>
             </div>
           </div>

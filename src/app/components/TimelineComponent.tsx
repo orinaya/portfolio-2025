@@ -55,16 +55,16 @@ function TimelineComponent() {
                 </p>
 
                 {selectedEducation.description && (
-                  <div className="mt-4 mb-6">
+                  <div className="mt-4 mb-6 flex flex-col gap-2">
                     <h4 className="text-lg font-semibold text-mocha-200 mb-2">Description</h4>
-                    <p className="text-mocha-200 bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <p className="text-mocha-200 bg-gray-50 p-4 rounded-lg border border-gray-200 text-[0.9rem]">
                       {selectedEducation.description}
                     </p>
                   </div>
                 )}
 
                 {selectedEducation.skills && selectedEducation.skills.length > 0 && (
-                  <div className="mb-6">
+                  <div className="mb-6 flex flex-col gap-2">
                     <h4 className="text-lg font-semibold text-mocha-200 mb-2">Apprentissages</h4>
                     <div className="flex flex-wrap gap-2">
                       {selectedEducation.skills.map((skill, index) => (
@@ -80,9 +80,9 @@ function TimelineComponent() {
                 )}
 
                 {selectedEducation.achievements && selectedEducation.achievements.length > 0 && (
-                  <div>
+                  <div className="flex flex-col gap-2">
                     <h4 className="text-lg font-semibold text-mocha-200 mb-2">Réalisations</h4>
-                    <ul className="list-disc pl-5 space-y-1 text-mocha-200">
+                    <ul className="list-disc pl-5 space-y-1 text-mocha-200 text-[0.9rem]">
                       {selectedEducation.achievements.map((achievement, index) => (
                         <li key={index}>{achievement}</li>
                       ))}
