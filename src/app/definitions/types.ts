@@ -30,7 +30,7 @@ export interface SkillItem {
 }
 
 export interface SkillCategory {
-  title: string;
+  title?: string;
   items: SkillItem[];
 }
 

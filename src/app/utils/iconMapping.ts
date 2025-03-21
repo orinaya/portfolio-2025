@@ -18,6 +18,8 @@ import gitIcon from "@/assets/icons/git.svg";
 import wordpressIcon from "@/assets/icons/wordpress.svg";
 import elementorIcon from "@/assets/icons/elementor.svg";
 import figmaIcon from "@/assets/icons/figma.svg";
+import langFrIcon from "@/assets/icons/lang-fr.svg";
+import langEnIcon from "@/assets/icons/lang-en.svg";
 
 type IconProps = {
   src: string;
@@ -47,6 +49,8 @@ const IconMapping: Record<string, IconProps> = {
   wordpress: wordpressIcon,
   elementor: elementorIcon,
   figma: figmaIcon,
+  langfr: langFrIcon,
+  langen: langEnIcon,
 };
 
 export default IconMapping;

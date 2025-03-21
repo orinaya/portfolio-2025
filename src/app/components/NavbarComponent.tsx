@@ -18,7 +18,7 @@ function NavbarComponent() {
             À propos
           </Link>
           <Link href="/#skills" className="hover:text-strawberry-700  transition font-medium">
-            Mon skills
+            Mes skills
           </Link>
           <Link href="/#parcours" className="hover:text-strawberry-700  transition font-medium">
             Mon parcours

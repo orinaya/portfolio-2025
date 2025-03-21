@@ -28,15 +28,14 @@ function AboutComponent() {
     <>
       <div
         id="a-propos"
-        className={` left-0 w-full bg-milk-980 text-mocha-200 rounded-t-3xl z-10 transform mt-[100vh] transition-transform duration-300 ${
+        className={` left-0 w-full bg-milk-980 text-mocha-200 rounded-t-3xl z-10 transform mt-[100vh] px-8 py-16 md:p-24 transition-transform duration-300 ${
           scrolled ? "translate-y-0" : "translate-y-16"
         }`}
       >
-        <div className=" max-w-6xl mx-auto pt-32 px-8 pb-32 flex justify-between gap-12">
-          <div className="flex flex-col w-1/2">
+        <div className=" max-w-6xl mx-auto pt-16 pb-16 flex flex-col lg:flex-row justify-between gap-12">
+          <div className="flex flex-col w-full lg:w-1/2">
             <TitleComponent uptitle="À propos" title="En quête d’alternance" />
-
-            <div className=" bg-[#FFFFFF] rounded-2xl p-8 self-stretch text-center justify-start">
+            <div className=" bg-white rounded-2xl p-6 md:p-8 self-stretch text-center justify-start">
               <p className="text-base font-light">
                 Je m’appelle Ori et je suis actuellement étudiante en troisième année de{" "}
                 <strong className="font-medium">Bachelor Développement Web</strong> à{" "}
@@ -74,7 +73,7 @@ function AboutComponent() {
             </div>
           </div>
 
-          <div className="flex flex-col w-1/2">
+          <div className="flex flex-col w-full lg:w-1/2">
             <TitleComponent uptitle="Passions & Hobbies" title="Explorer mon univers" />
             <PassionsComponent />
           </div>

@@ -61,3 +61,12 @@ export const softSkills: SoftSkill[] = [
   {text: "Adaptabilité et apprentissage continu"},
   {text: "Esprit analytique et résolution de problèmes"},
 ];
+
+export const langSkills: SkillCategory[] = [
+  {
+    items: [
+      {name: "Français (langue maternelle)", icon: "langfr", color: "E7E3E8"},
+      {name: "Anglais (B2 Intermédiaire avancé)", icon: "langen", color: "E7E3E8"},
+    ],
+  },
+];

@@ -11,8 +11,8 @@ function TimelineComponent() {
   );
 
   return (
-    <div className="relative z-20 bg-milk-900 py-16 px-8" id="parcours">
-      <div className="max-w-6xl mx-auto">
+    <div className="relative z-20 bg-milk-900 p-24" id="parcours">
+      <div className="max-w-6xl mx-auto p-6">
         <TitleComponent uptitle="Mon parcours" title="Découvrir mes formations & expériences" />
 
         <div className="flex flex-col md:flex-row gap-8">
