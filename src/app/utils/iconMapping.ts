@@ -19,7 +19,14 @@ import wordpressIcon from "@/assets/icons/wordpress.svg";
 import elementorIcon from "@/assets/icons/elementor.svg";
 import figmaIcon from "@/assets/icons/figma.svg";
 
-const IconMapping: {[key: string]: string} = {
+type IconProps = {
+  src: string;
+  height: number;
+  width: number;
+  blurDataURL?: string;
+};
+
+const IconMapping: Record<string, IconProps> = {
   javascript: javascriptIcon,
   typescript: typescriptIcon,
   php: phpIcon,
