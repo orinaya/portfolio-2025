@@ -65,11 +65,6 @@ function Footer() {
                 <span className="icon-mail"></span>
                 ori.frouin@gmail.com
               </p>
-              <p className="font-semibold mt-2">Téléphone</p>
-              <p className="flex items-center gap-2">
-                <span className="icon-tel"></span>
-                07 70 35 45 69
-              </p>
             </div>
 
             <div className="flex flex-col gap-2 justify-start">
