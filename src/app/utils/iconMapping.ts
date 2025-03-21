@@ -19,7 +19,7 @@ import wordpressIcon from "@/assets/icons/wordpress.svg";
 import elementorIcon from "@/assets/icons/elementor.svg";
 import figmaIcon from "@/assets/icons/figma.svg";
 
-const IconMapping: {[key: string]: any} = {
+const IconMapping: {[key: string]: string} = {
   javascript: javascriptIcon,
   typescript: typescriptIcon,
   php: phpIcon,
