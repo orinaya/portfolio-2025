@@ -36,7 +36,7 @@ function SkillsComponent() {
 
               <div className="pl-4">
                 {softSkills.map((skill, index) => (
-                  <SoftSkillItem key={index} skill={skill} index={index} />
+                  <SoftSkillItem key={index} skill={skill} />
                 ))}
               </div>
             </div>
@@ -50,7 +50,7 @@ function SkillsComponent() {
 
               <div className="pl-4">
                 {softSkills.map((skill, index) => (
-                  <SoftSkillItem key={index} skill={skill} index={index} />
+                  <SoftSkillItem key={index} skill={skill} />
                 ))}
               </div>
             </div>
