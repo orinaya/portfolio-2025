@@ -1,4 +1,4 @@
-import photoHero from "@/app/assets/images/photo-hero.png";
+import photoHero from "@/assets/images/photo-hero.png";
 import Image from "next/image";
 import ButtonParticle from "../particles/ButtonParticle";
 
@@ -10,14 +10,10 @@ function HeroComponent() {
           <span className="text-mocha-200 text-5xl font-bold font-michael">
             Hello, je m’appelle
           </span>
-          <span className="text-strawberry-700 text-5xl font-bold font-michael">
-            Oriane
-          </span>
+          <span className="text-strawberry-700 text-5xl font-bold font-michael">Oriane</span>
         </div>
         <div className="w-[1182px] h-[158px] relative mb-[182px]">
-          <div className="relative text-[158px] font-bold title">
-            Développeuse
-          </div>
+          <div className="relative text-[158px] font-bold title">Développeuse</div>
           <div className="left-[952px] top-[143px] absolute text-center justify-start text-[#3b2f2f] text-xl font-light">
             basée à Nantes.
           </div>
@@ -25,16 +21,18 @@ function HeroComponent() {
         <Image src={photoHero} alt="photo ori" className="absolute bottom-0" />
         <div className="z-10 flex gap-4">
           <ButtonParticle
-            title="Découvrir mes travaux"
+            title="Découvrir mes projets"
             colorBg="bg-strawberry-800"
             colorText="text-strawberry-200"
             routeLink="#"
+            iconBefore="eye"
           />
           <ButtonParticle
             title="Télécharger mon CV"
             colorBg="bg-cremeBrulee-800"
             colorText="text-cremeBrulee-200"
             routeLink="#"
+            iconBefore="download"
           />
         </div>
         {/* <svg

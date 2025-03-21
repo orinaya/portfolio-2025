@@ -22,3 +22,18 @@ export type TitleProps = {
   uptitle: string;
   title: string;
 };
+
+export interface SkillItem {
+  name: string;
+  icon: string;
+  color: string;
+}
+
+export interface SkillCategory {
+  title: string;
+  items: SkillItem[];
+}
+
+export interface SoftSkill {
+  text: string;
+}

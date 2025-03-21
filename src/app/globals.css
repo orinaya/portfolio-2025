@@ -1,6 +1,18 @@
 @import "tailwindcss";
 
 @font-face {
+  font-family: "icomoon";
+  src: url("assets/icomoon/icomoon.eot");
+  src: url("assets/icomoon/icomoon.eot") format("embedded-opentype"),
+    url("assets/icomoon/icomoon.ttf") format("truetype"),
+    url("assets/icomoon/icomoon.woff") format("woff"),
+    url("assets/icomoon/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
   font-family: "michael", sans-serif;
   src: url("../app/assets/fonts/michael.ttf") format("truetype");
 }
@@ -67,6 +79,65 @@
   --color-milk-980: hsl(0, 13%, 98%);
 }
 
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-brain:before {
+  content: "\e900";
+}
+.icon-eye:before {
+  content: "\e901";
+}
+.icon-calendar:before {
+  content: "\e902";
+}
+.icon-wheel:before {
+  content: "\e903";
+}
+.icon-map-point:before {
+  content: "\e904";
+}
+.icon-letter:before {
+  content: "\e905";
+}
+.icon-fire:before {
+  content: "\e906";
+}
+.icon-academic-cap:before {
+  content: "\e907";
+}
+.icon-case-round:before {
+  content: "\e908";
+}
+.icon-laptop:before {
+  content: "\e909";
+}
+.icon-github:before {
+  content: "\e90a";
+}
+.icon-lang:before {
+  content: "\e90b";
+}
+.icon-square-top-down:before {
+  content: "\e90c";
+}
+.icon-download:before {
+  content: "\e90d";
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --background: #0a0a0a;
@@ -95,6 +166,25 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
 }
+
+/* .container {
+  max-width: 1280px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: 760px) {
+    max-width: 300px;
+  }
+
+  @media (min-width: 760px) and (max-width: 980px) {
+    max-width: 660px;
+  }
+
+  @media (min-width: 980px) and (max-width: 1440px) {
+    max-width: 990px;
+  }
+} */
 
 .background-hero {
   background: radial-gradient(

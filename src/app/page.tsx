@@ -1,7 +1,10 @@
-import AboutComponent from "./components/AboutComponent";
+import AboutComponent from "./components/About/AboutComponent";
 import HeroComponent from "./components/HeroComponent";
 import NavbarComponent from "./components/NavbarComponent";
-import TimelineComponent from "./components/TimelineComponent";
+import TimelineComponent from "./components/Journey/TimelineComponent";
+import FooterComponent from "./components/FooterComponent";
+import SkillsComponent from "./components/Skills/SkillsComponent";
+import ProjectsComponent from "./components/ProjectsComponent";
 
 export default function Home() {
   return (
@@ -13,6 +16,9 @@ export default function Home() {
         <HeroComponent />
         <AboutComponent />
         <TimelineComponent />
+        <SkillsComponent />
+        <ProjectsComponent />
+        <FooterComponent />
       </div>
     </>
   );

@@ -1,9 +1,9 @@
 "use client";
 
 import React, {useState} from "react";
-import {EducationTypes} from "../definitions/types";
-import TitleComponent from "./TitleComponent";
-import {educationData} from "../datas/educationData";
+import {EducationTypes} from "../../definitions/types";
+import TitleComponent from "../TitleComponent";
+import {educationData} from "../../datas/educationData";
 
 function TimelineComponent() {
   const [selectedEducation, setSelectedEducation] = useState<EducationTypes | null>(

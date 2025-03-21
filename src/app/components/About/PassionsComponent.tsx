@@ -1,13 +1,13 @@
 import Image from "next/image";
-import sportCar from "../assets/icons/icon-sportcar.svg";
-import peugeotImg from "../assets/images/passions/peugeot.jpg";
-import ferrariImg from "../assets/images/passions/ferrari.jpg";
-import lotrImg from "../assets/images/passions/lotr.jpg";
-import swImg from "../assets/images/passions/sw.jpg";
-import rpgImg1 from "../assets/images/passions/rpg-1.jpg";
-import rpgImg2 from "../assets/images/passions/rpg-2.jpg";
-import diceIcon from "../assets/icons/icon-dice.svg";
-import magicHatIcon from "../assets/icons/icon-magic-hat.svg";
+import sportCar from "@/assets/icons/icon-sportcar.svg";
+import peugeotImg from "@/assets/images/passions/peugeot.jpg";
+import ferrariImg from "@/assets/images/passions/ferrari.jpg";
+import lotrImg from "@/assets/images/passions/lotr.jpg";
+import swImg from "@/assets/images/passions/sw.jpg";
+import rpgImg1 from "@/assets/images/passions/rpg-1.jpg";
+import rpgImg2 from "@/assets/images/passions/rpg-2.jpg";
+import diceIcon from "@/assets/icons/icon-dice.svg";
+import magicHatIcon from "@/assets/icons/icon-magic-hat.svg";
 
 function PassionsComponent() {
   return (

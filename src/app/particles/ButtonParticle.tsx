@@ -15,13 +15,9 @@ function ButtonParticle({
         href={routeLink}
         className={`btn ${colorBg} ${colorText} flex items-center justify-center text-center px-4 py-2 rounded-full font-semibold text-base transition-transform duration-250 ease-in-out`}
       >
-        {iconBefore && (
-          <i className={`link-icon-before icomoon icon-${iconBefore}`} />
-        )}
+        {iconBefore && <i className={`link-icon-before icomoon mr-2 icon-${iconBefore}`} />}
         {title}
-        {iconAfter && (
-          <i className={`link-icon-after icomoon icon-${iconAfter}`} />
-        )}
+        {iconAfter && <i className={`link-icon-after icomoon ml-2 icon-${iconAfter}`} />}
       </Link>
     </>
   );

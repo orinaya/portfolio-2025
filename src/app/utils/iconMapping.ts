@@ -1,0 +1,45 @@
+// utils/iconMapping.ts
+import javascriptIcon from "@/assets/icons/javascript.svg";
+import typescriptIcon from "@/assets/icons/typescript.svg";
+import phpIcon from "@/assets/icons/php.svg";
+import sqlIcon from "@/assets/icons/sql.svg";
+import htmlIcon from "@/assets/icons/html.svg";
+import cssIcon from "@/assets/icons/css.svg";
+import reactIcon from "@/assets/icons/react.svg";
+import vueIcon from "@/assets/icons/vue.svg";
+import sassIcon from "@/assets/icons/sass.svg";
+import tailwindIcon from "@/assets/icons/tailwind.svg";
+import nodejsIcon from "@/assets/icons/nodejs.svg";
+import symfonyIcon from "@/assets/icons/symfony.svg";
+import reactNativeIcon from "@/assets/icons/react.svg";
+import mysqlIcon from "@/assets/icons/mysql.svg";
+import postgresqlIcon from "@/assets/icons/postgresql.svg";
+import gitIcon from "@/assets/icons/git.svg";
+import wordpressIcon from "@/assets/icons/wordpress.svg";
+import elementorIcon from "@/assets/icons/elementor.svg";
+import figmaIcon from "@/assets/icons/figma.svg";
+
+const IconMapping: {[key: string]: any} = {
+  javascript: javascriptIcon,
+  typescript: typescriptIcon,
+  php: phpIcon,
+  sql: sqlIcon,
+  html: htmlIcon,
+  css: cssIcon,
+  react: reactIcon,
+  next: figmaIcon,
+  vue: vueIcon,
+  sass: sassIcon,
+  tailwind: tailwindIcon,
+  nodejs: nodejsIcon,
+  symfony: symfonyIcon,
+  reactNative: reactNativeIcon,
+  mysql: mysqlIcon,
+  postgresql: postgresqlIcon,
+  git: gitIcon,
+  wordpress: wordpressIcon,
+  elementor: elementorIcon,
+  figma: figmaIcon,
+};
+
+export default IconMapping;

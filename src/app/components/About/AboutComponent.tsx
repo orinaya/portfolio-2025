@@ -3,8 +3,8 @@ import Link from "next/link";
 import {useEffect, useState} from "react";
 
 import PassionsComponent from "./PassionsComponent";
-import TitleComponent from "./TitleComponent";
-import ButtonParticle from "../particles/ButtonParticle";
+import TitleComponent from "../TitleComponent";
+import ButtonParticle from "../../particles/ButtonParticle";
 
 function AboutComponent() {
   const [scrolled, setScrolled] = useState(false);
@@ -65,9 +65,10 @@ function AboutComponent() {
               <div className="flex justify-center mt-4">
                 <ButtonParticle
                   title="Contact"
-                  colorBg="bg-strawberry-800"
+                  colorBg="bg-strawberry-900"
                   colorText="text-strawberry-200"
                   routeLink="#"
+                  iconBefore="letter"
                 />
               </div>
             </div>
