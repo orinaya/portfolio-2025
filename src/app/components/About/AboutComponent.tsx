@@ -28,11 +28,11 @@ function AboutComponent() {
     <>
       <div
         id="a-propos"
-        className={` left-0 w-full bg-milk-980 text-mocha-200 rounded-t-3xl z-10 transform mt-[100vh] px-8 py-16 md:p-24 transition-transform duration-300 ${
+        className={` left-0 w-full bg-milk-980 text-mocha-200 rounded-t-3xl z-10 transform mt-[100vh] lg:px-8 px-4 py-16 md:p-24 transition-transform duration-300 ${
           scrolled ? "translate-y-0" : "translate-y-16"
         }`}
       >
-        <div className=" max-w-6xl mx-auto pt-16 pb-16 flex flex-col lg:flex-row justify-between gap-12">
+        <div className=" max-w-6xl mx-auto lg:pt-16 pt-8 lg:pb-16 flex flex-col lg:flex-row justify-between lg:gap-12 gap-32">
           <div className="flex flex-col w-full lg:w-1/2">
             <TitleComponent uptitle="À propos" title="En quête d’alternance" />
             <div className=" bg-white rounded-2xl p-6 md:p-8 self-stretch text-center justify-start">

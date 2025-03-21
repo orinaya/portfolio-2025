@@ -11,12 +11,29 @@ function TimelineComponent() {
   );
 
   return (
-    <div className="relative z-20 bg-milk-900 p-24" id="parcours">
-      <div className="max-w-6xl mx-auto p-6">
+    <div className="relative z-20 bg-milk-900 lg:p-24" id="parcours">
+      <div className="max-w-7xl mx-auto p-6">
         <TitleComponent uptitle="Mon parcours" title="Découvrir mes formations & expériences" />
 
-        <div className="flex flex-col md:flex-row gap-8">
-          <div className="w-full md:w-1/2 bg-[#F8F6F6] rounded-2xl p-6 ">
+        <div className="md:hidden mb-6">
+          <select
+            className="w-full p-3 rounded-lg bg-[#F8F6F6] border border-gray-300 text-mocha-200 font-medium"
+            onChange={(e) => {
+              const selected = educationData.find((edu) => edu.id === Number(e.target.value));
+              setSelectedEducation(selected || null);
+            }}
+            value={selectedEducation?.id || ""}
+          >
+            {educationData.map((education) => (
+              <option key={education.id} value={education.id}>
+                {education.title} ({education.years})
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="md:flex-row gap-8 md:flex">
+          {/* w-full md:w-1/2 */}
+          <div className="hidden md:flex  bg-[#F8F6F6] rounded-2xl p-6">
             <div className="space-y-4">
               {educationData.map((education) => (
                 <div
@@ -40,7 +57,7 @@ function TimelineComponent() {
               ))}
             </div>
           </div>
-          <div className="w-full md:w-1/2 bg-[#F8F6F6] rounded-2xl p-6 ">
+          <div className="w-full md:w-1/2 bg-[#F8F6F6] rounded-2xl p-6">
             {selectedEducation ? (
               <div>
                 <div className="inline-block px-2 py-1 rounded-full text-xs font-medium bg-red-200 text-red-800 mb-2">

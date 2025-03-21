@@ -13,7 +13,7 @@ function PassionsComponent() {
   return (
     <>
       <div className="flex flex-col gap-5">
-        <div className="md:grid md:grid-cols-7 md:gap-5 gap-3 flex flex-wrap">
+        <div className="md:grid md:grid-cols-7 md:gap-5 gap-2 flex flex-wrap">
           <div className="col-span-3 w-full flex flex-col bg-[#FEECEC] py-4 px-6 items-center justify-center gap-3 rounded-xl hover:scale-105 transition-transform duration-200 hover:drop-shadow-xl">
             <div className="flex gap-2 items-center justify-center text-2xl font-semibold text-melon-600">
               <Image src={sportCar} alt="Sportcar Icon" width={24} height={24} />

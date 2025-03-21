@@ -41,7 +41,7 @@ function NavbarComponent() {
             title="Github"
             colorBg="bg-strawberry-900"
             colorText="text-strawberry-200"
-            routeLink="#"
+            routeLink="https://github.com/orinaya"
             iconBefore="github"
           />
         </div>
