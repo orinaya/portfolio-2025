@@ -16,7 +16,7 @@ function SkillsComponent() {
           <div className="mb-8 lg:mb-0">
             <div className="flex items-center mb-6">
               <div className="w-6 h-6 flex items-center justify-center mr-2">
-                <i className="text-mocha-200 icon-laptop" />
+                <span className="text-mocha-200 icon-laptop" />
               </div>
               <h2 className="text-xl font-bold">Hard Skills</h2>
             </div>
@@ -30,7 +30,7 @@ function SkillsComponent() {
             <div>
               <div className="flex items-center mb-6">
                 <div className="w-6 h-6 flex items-center justify-center mr-2">
-                  <i className="text-mocha-200 icon-brain" />
+                  <span className="text-mocha-200 icon-brain" />
                 </div>
                 <h2 className="text-xl font-bold">Soft Skills</h2>
               </div>
@@ -44,7 +44,7 @@ function SkillsComponent() {
             <div>
               <div className="flex items-center mb-6">
                 <div className="w-6 h-6 flex items-center justify-center mr-2">
-                  <i className="text-mocha-200 icon-lang" />
+                  <span className="text-mocha-200 icon-lang" />
                 </div>
                 <h2 className="text-xl font-bold">Langues</h2>
               </div>

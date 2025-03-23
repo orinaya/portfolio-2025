@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ButtonParticle from "../particles/ButtonParticle";
+import ButtonParticle from "./ButtonComponent";
 
 function NavbarComponent() {
   return (

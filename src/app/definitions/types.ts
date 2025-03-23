@@ -2,9 +2,11 @@ export interface ButtonProps {
   title?: string;
   colorBg: string;
   colorText: string;
-  routeLink: string;
+  routeLink?: string;
   iconBefore?: string;
   iconAfter?: string;
+  target?: string;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 export type EducationTypes = {

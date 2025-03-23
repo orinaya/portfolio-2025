@@ -134,6 +134,7 @@
 }
 .icon-square-top-down:before {
   content: "\e90c";
+  font-size: 16px;
 }
 .icon-download:before {
   content: "\e90d";

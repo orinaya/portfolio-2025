@@ -1,6 +1,6 @@
 import photoHero from "@/assets/images/photo-hero.png";
 import Image from "next/image";
-import ButtonParticle from "../particles/ButtonParticle";
+import ButtonParticle from "./ButtonComponent";
 
 function HeroComponent() {
   return (
@@ -28,10 +28,11 @@ function HeroComponent() {
             iconBefore="eye"
           />
           <ButtonParticle
+            target="_blank"
             title="Télécharger mon CV"
             colorBg="bg-cremeBrulee-800"
             colorText="text-cremeBrulee-200"
-            routeLink="#"
+            routeLink="https://drive.google.com/file/d/13uXVJyO05jd0KePHcqGPa8Sc7x939lHe/view?usp=drive_link"
             iconBefore="download"
           />
         </div>

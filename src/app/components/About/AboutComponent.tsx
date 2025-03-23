@@ -4,7 +4,7 @@ import {useEffect, useState} from "react";
 
 import PassionsComponent from "./PassionsComponent";
 import TitleComponent from "../TitleComponent";
-import ButtonParticle from "../../particles/ButtonParticle";
+import ButtonParticle from "../ButtonComponent";
 
 function AboutComponent() {
   const [scrolled, setScrolled] = useState(false);
