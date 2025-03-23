@@ -1,5 +1,5 @@
 import Link from "next/link";
-import {ButtonProps} from "../definitions/types";
+import {ButtonProps} from "@/definitions/types";
 
 function ButtonComponent({
   title,

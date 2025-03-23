@@ -1,7 +1,7 @@
-import SkillCategory from "./SkillCategory";
-import {hardSkills, langSkills, softSkills} from "../../datas/skillsData";
-import SoftSkillItem from "./SoftSkillItem";
-import TitleComponent from "../TitleComponent";
+import SkillCategory from "@/components/Skills/SkillCategory";
+import {hardSkills, langSkills, softSkills} from "@/datas/skillsData";
+import SoftSkillItem from "@/components/Skills/SoftSkillItem";
+import TitleComponent from "@/components/TitleComponent";
 
 function SkillsComponent() {
   return (

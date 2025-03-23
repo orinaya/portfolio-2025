@@ -2,9 +2,9 @@
 import Link from "next/link";
 import {useEffect, useState} from "react";
 
-import PassionsComponent from "./PassionsComponent";
-import TitleComponent from "../TitleComponent";
-import ButtonParticle from "../ButtonComponent";
+import PassionsComponent from "@/components/About/PassionsComponent";
+import TitleComponent from "@/components/TitleComponent";
+import ButtonParticle from "@/components/ButtonComponent";
 
 function AboutComponent() {
   const [scrolled, setScrolled] = useState(false);

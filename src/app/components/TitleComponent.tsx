@@ -1,4 +1,4 @@
-import {TitleProps} from "../definitions/types";
+import {TitleProps} from "@/definitions/types";
 
 function TitleComponent({uptitle, title}: TitleProps) {
   return (

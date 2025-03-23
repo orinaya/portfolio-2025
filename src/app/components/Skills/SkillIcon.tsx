@@ -1,7 +1,7 @@
 import Image from "next/image";
-import {SkillItem} from "../../definitions/types";
+import {SkillItem} from "@/definitions/types";
 
-import {default as IconMapping} from "../../utils/iconMapping";
+import {default as IconMapping} from "@/utils/iconMapping";
 
 interface SkillIconProps {
   skill: SkillItem;

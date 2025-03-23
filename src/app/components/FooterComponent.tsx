@@ -1,6 +1,6 @@
 "use client";
-import TitleComponent from "./TitleComponent";
-import ButtonParticle from "@/components/ButtonComponent";
+import TitleComponent from "@/components/TitleComponent";
+import ButtonComponent from "@/components/ButtonComponent";
 
 function Footer() {
   return (
@@ -61,7 +61,7 @@ function Footer() {
             </div>
 
             <div className="w-full flex justify-center lg:mt-12 mt-4">
-              <ButtonParticle
+              <ButtonComponent
                 target="_blank"
                 title="Télécharger mon CV"
                 colorBg="bg-cremeBrulee-800"

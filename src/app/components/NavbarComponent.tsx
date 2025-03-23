@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ButtonParticle from "./ButtonComponent";
+import ButtonComponent from "@/components/ButtonComponent";
 
 function NavbarComponent() {
   return (
@@ -30,14 +30,14 @@ function NavbarComponent() {
 
         {/* GitHub & Contact */}
         <div className="flex gap-4 items-center w-1/5">
-          <ButtonParticle
+          <ButtonComponent
             title="Contact"
             colorBg="bg-strawberry-900"
             colorText="text-strawberry-200"
             routeLink="#"
             iconBefore="letter"
           />
-          <ButtonParticle
+          <ButtonComponent
             title="Github"
             colorBg="bg-strawberry-900"
             colorText="text-strawberry-200"

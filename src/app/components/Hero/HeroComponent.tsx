@@ -1,6 +1,6 @@
 import photoHero from "@/assets/images/photo-hero.png";
 import Image from "next/image";
-import ButtonParticle from "./ButtonComponent";
+import ButtonComponent from "@/components/ButtonComponent";
 
 function HeroComponent() {
   return (
@@ -20,14 +20,14 @@ function HeroComponent() {
         </div>
         <Image src={photoHero} alt="photo ori" className="absolute bottom-0" />
         <div className="z-10 flex gap-4">
-          <ButtonParticle
+          <ButtonComponent
             title="Découvrir mes projets"
             colorBg="bg-strawberry-800"
             colorText="text-strawberry-200"
             routeLink="#"
             iconBefore="eye"
           />
-          <ButtonParticle
+          <ButtonComponent
             target="_blank"
             title="Télécharger mon CV"
             colorBg="bg-cremeBrulee-800"
