@@ -39,3 +39,31 @@ export interface SkillCategory {
 export interface SoftSkill {
   text: string;
 }
+
+export interface ProjectTypes {
+  id: number;
+  path: string;
+  category: string[];
+  title: string;
+  description: string;
+  image: string;
+  softwares: string[];
+  banner: string;
+  hashtag: string;
+  big_description: string;
+  first_image?: string;
+  second_image?: string;
+  details: {
+    softwares: string[];
+    role: string[];
+    team?: string[];
+    teamLink?: string[];
+    school_year: string;
+  };
+  buttons?: {
+    href: string;
+    title: string;
+    color: string;
+  }[];
+  date: number;
+}

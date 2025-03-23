@@ -74,7 +74,7 @@ function AboutComponent() {
           </div>
 
           <div className="flex flex-col w-full lg:w-1/2">
-            <TitleComponent uptitle="Passions & Hobbies" title="Explorer mon univers" />
+            <TitleComponent uptitle="Passions & Hobbies" title="Explorez mon univers" />
             <PassionsComponent />
           </div>
         </div>

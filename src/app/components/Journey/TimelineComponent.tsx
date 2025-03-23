@@ -13,7 +13,7 @@ function TimelineComponent() {
   return (
     <div className="relative z-20 bg-milk-900 lg:p-24" id="parcours">
       <div className="max-w-7xl mx-auto p-6">
-        <TitleComponent uptitle="Mon parcours" title="Découvrir mes formations & expériences" />
+        <TitleComponent uptitle="Mon parcours" title="Plongez dans mon histoire" />
 
         <div className="md:hidden mb-6">
           <select

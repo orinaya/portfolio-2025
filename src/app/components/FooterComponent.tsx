@@ -5,8 +5,8 @@ import ButtonComponent from "@/components/ButtonComponent";
 function Footer() {
   return (
     <>
-      <footer className="w-full pt-8 relative bg-mocha-900">
-        <div className="mx-[10%] relative flex items-end bg-cover bg-no-repeat bg-top bg-mocha-950 rounded-t-xl">
+      <footer className="w-full pt-8 relative bg-mocha-950">
+        <div className="mx-[10%] relative flex items-end bg-cover bg-no-repeat bg-top bg-milk-980 rounded-t-xl">
           <div className="w-full flex flex-col items-start justify-between bottom-0 py-3 lg:px-6 px-0 text-darkOlive-200">
             <div className="h-20 w-full flex justify-center lg:mt-12 mb-12">
               <TitleComponent uptitle="Développeuse" title="Oriane Ratelade" />

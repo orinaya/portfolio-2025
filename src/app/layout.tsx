@@ -14,8 +14,12 @@ const montserratSans = Montserrat({
 
 export const metadata: Metadata = {
   title: "Ori Ratelade | Portfolio",
-  description: "Portfolio 2025 Ori Ratelade",
+  description:
+    "Bienvenue sur le portfolio d'une développeuse à la recherche d'une alternance. Découvrez mes compétences et mes projets et peut-être me proposerez-vous une opportunité d'alternance en Développement Full-Stack !",
+  keywords: "Portfolio, Alternance, Développement Web, Front-end, Back-end",
 };
+
+<title>Oriane Frouin | Portfolio</title>;
 
 export default function RootLayout({
   children,

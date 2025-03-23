@@ -4,7 +4,7 @@ import NavbarComponent from "@/components/NavbarComponent";
 import TimelineComponent from "@/components/Journey/TimelineComponent";
 import FooterComponent from "@/components/FooterComponent";
 import SkillsComponent from "@/components/Skills/SkillsComponent";
-import ProjectsComponent from "@/components/ProjectsComponent";
+import ProjectsComponent from "@/components/Projects/ProjectsComponent";
 import ScrollTopComponent from "@/components/ScrollTopComponent";
 
 export default function Home() {

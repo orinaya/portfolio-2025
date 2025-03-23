@@ -20,6 +20,8 @@ import elementorIcon from "@/assets/icons/elementor.svg";
 import figmaIcon from "@/assets/icons/figma.svg";
 import langFrIcon from "@/assets/icons/lang-fr.svg";
 import langEnIcon from "@/assets/icons/lang-en.svg";
+import godotIcon from "@/assets/icons/godot.svg";
+import wooIcon from "@/assets/icons/woo.svg";
 
 type IconProps = {
   src: string;
@@ -51,6 +53,8 @@ const IconMapping: Record<string, IconProps> = {
   figma: figmaIcon,
   langfr: langFrIcon,
   langen: langEnIcon,
+  godot: godotIcon,
+  woo: wooIcon,
 };
 
 export default IconMapping;
