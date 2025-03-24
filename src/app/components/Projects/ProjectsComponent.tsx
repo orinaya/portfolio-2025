@@ -1,11 +1,12 @@
 "use client";
 
 import { useState, useMemo, Fragment } from "react";
+import { motion } from "framer-motion";
+import { projectsData, projectsFiltersData } from "@/datas/projectsData";
 // import { useRouter } from "next/navigation";
 import CardComponent from "@/components/Projects/CardComponent";
-import { projectsData, projectsFiltersData } from "@/datas/projectsData";
-import TitleComponent from "../TitleComponent";
-import ButtonComponent from "../ButtonComponent";
+import TitleComponent from "@/components/TitleComponent";
+import ButtonComponent from "@/components/ButtonComponent";
 
 const ProjectsPage = () => {
   // const router = useRouter();
@@ -39,19 +40,28 @@ const ProjectsPage = () => {
     <div id="projets" className="relative bg-mocha-950 lg:p-24 py-16 z-20">
       <div className="max-w-7xl mx-auto p-6">
         <TitleComponent uptitle="Mes projets" title="Suivez l’évolution de mes projets" />
-
         <div className="flex flex-col lg:flex-row justify-between items-center mb-6">
-          <div className="flex flex-wrap gap-5 py-6">
+          <div className="flex flex-wrap gap-5 py-6 relative">
             {projectsFiltersData.map((item) => (
-              <ButtonComponent
-                key={item.id}
-                title={item.label}
-                iconBefore={item.icon}
-                className="flex items-center gap-2 px-4 py-2 rounded-md text-sm lg:text-lg font-light transition"
-                onClick={() => setSelectedCategory(item.value)}
-                colorBg={selectedCategory === item.value ? "bg-mocha-900" : "bg-mocha-950"}
-                colorText="text-mocha-200"
-              />
+              <div key={item.id} className="relative">
+                {selectedCategory === item.value && (
+                  <motion.div
+                    className="absolute inset-0 bg-mocha-900 rounded-md -z-10"
+                    layoutId="activeTab"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.3 }}
+                  />
+                )}
+                <ButtonComponent
+                  title={item.label}
+                  iconBefore={item.icon}
+                  className="flex items-center gap-2 px-4 py-2 rounded-md text-sm lg:text-lg font-light transition-colors duration-300"
+                  onClick={() => setSelectedCategory(item.value)}
+                  colorBg="bg-transparent"
+                  colorText="text-mocha-200"
+                />
+              </div>
             ))}
           </div>
 

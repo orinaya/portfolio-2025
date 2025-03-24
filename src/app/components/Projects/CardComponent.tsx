@@ -1,21 +1,18 @@
+import Image from "next/image";
+import { motion } from "framer-motion";
 import { ProjectTypes } from "@/definitions/types";
 import IconMapping from "@/utils/iconMapping";
 import projectsImgMapping from "@/utils/projectsImgMapping";
-import Image from "next/image";
-
-// interface CardComponentProps {
-//   id?: number;
-//   title: string;
-//   description: string;
-//   image: string;
-//   softwares: string[];
-//   date: number;
-//   project_status: string;
-// }
 
 function CardComponent({ image, title, description, project_status, softwares }: ProjectTypes) {
   return (
-    <div className="card-container flex relative rounded-lg cursor-pointer hover:scale-105 transition-transform duration-200 hover:brightness-105 hover:drop-shadow-xl">
+    <motion.div
+      initial={{ scale: 1, opacity: 0 }}
+      whileInView={{ scale: 1, opacity: 1 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: true }}
+      className="card-container flex relative rounded-lg cursor-pointer hover:scale-105 transition-transform duration-200 hover:brightness-105 hover:drop-shadow-xl"
+    >
       <Image
         src={projectsImgMapping[image] || projectsImgMapping["default"]}
         alt={title}
@@ -33,25 +30,16 @@ function CardComponent({ image, title, description, project_status, softwares }:
           <div className="flex flex-col gap-2">
             <p className="font-medium lg:text-base text-sm">Outils</p>
             <div className="flex gap-1 flex-wrap">
-              {softwares.map(
-                (software, index) => (
-                  <Image
-                    key={index}
-                    className="h-9 w-auto"
-                    src={IconMapping[software] || projectsImgMapping["default"]}
-                    alt={software}
-                    width={30}
-                    height={30}
-                  />
-                )
-                //   <Image
-                //   src={projectsImgMapping[image]}
-                //   alt={title}
-                //   className="object-cover rounded-l-lg w-[11.5rem] lg:w-[12.8rem]"
-                //   width={180}
-                //   height={220}
-                // />
-              )}
+              {softwares.map((software, index) => (
+                <Image
+                  key={index}
+                  className="h-9 w-auto"
+                  src={IconMapping[software] || projectsImgMapping["default"]}
+                  alt={software}
+                  width={30}
+                  height={30}
+                />
+              ))}
             </div>
           </div>
           <div className="mt-3 flex justify-between items-center">
@@ -60,7 +48,7 @@ function CardComponent({ image, title, description, project_status, softwares }:
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

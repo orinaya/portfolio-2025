@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-
+import { motion } from "framer-motion";
 import PassionsComponent from "@/components/About/PassionsComponent";
 import TitleComponent from "@/components/TitleComponent";
 import ButtonParticle from "@/components/ButtonComponent";
@@ -26,14 +26,20 @@ function AboutComponent() {
   }, []);
   return (
     <>
-      <div
+      <motion.div
         id="a-propos"
         className={` left-0 w-full bg-milk-980 text-mocha-200 rounded-t-3xl z-10 transform mt-[100vh] lg:px-8 px-4 py-20 md:p-24 transition-transform duration-300 ${
           scrolled ? "translate-y-0" : "translate-y-16"
         }`}
       >
-        <div className=" max-w-6xl mx-auto lg:pt-16 pt-8 lg:pb-16 flex flex-col lg:flex-row justify-between lg:gap-12 gap-32">
-          <div className="flex flex-col w-full lg:w-1/2">
+        <motion.div className=" max-w-6xl mx-auto lg:pt-16 pt-8 lg:pb-16 flex flex-col lg:flex-row justify-between lg:gap-12 gap-32">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="flex flex-col w-full lg:w-1/2"
+          >
             <TitleComponent uptitle="À propos" title="En quête d’alternance" />
             <div className=" bg-white rounded-2xl p-6 md:p-8 self-stretch text-center justify-start">
               <p className="text-base font-light">
@@ -71,14 +77,20 @@ function AboutComponent() {
                 />
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="flex flex-col w-full lg:w-1/2">
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="flex flex-col w-full lg:w-1/2"
+          >
             <TitleComponent uptitle="Passions & Hobbies" title="Explorez mon univers" />
             <PassionsComponent />
-          </div>
-        </div>
-      </div>
+          </motion.div>
+        </motion.div>
+      </motion.div>
     </>
   );
 }

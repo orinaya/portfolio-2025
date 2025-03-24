@@ -30,7 +30,7 @@ function SoftSkillItem({ skill }: SoftSkillItemProps) {
           </div>
 
           <div className="relative py-1 pr-4 z-10">
-            <span className="text-mocha-200 text-sm">{skill.text}</span>
+            <span className="text-mocha-200 text-base">{skill.text}</span>
           </div>
         </div>
       </div>

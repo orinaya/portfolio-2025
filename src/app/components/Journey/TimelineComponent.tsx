@@ -70,7 +70,7 @@ function TimelineComponent() {
                 {selectedEducation.description && (
                   <div className="mt-4 mb-6 flex flex-col gap-2">
                     <h4 className="lg:text-lg text-base font-semibold text-mocha-200 mb-2">Description</h4>
-                    <p className="text-mocha-200 bg-gray-50 p-4 rounded-lg border border-gray-200 text-[0.9rem]">
+                    <p className="text-mocha-200 bg-gray-50 p-4 rounded-lg border border-gray-200 text-base">
                       {selectedEducation.description}
                     </p>
                   </div>
