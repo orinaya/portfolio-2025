@@ -27,11 +27,11 @@ function CardComponent({ image, title, description, project_status, softwares }:
       <div className="card-content bg-white rounded-r-lg p-4 w-32 lg:w-44">
         <div className="flex flex-col gap-1 h-full justify-between">
           <div>
-            <h3 className="font-semibold text-lg text-mocha-200">{title}</h3>
-            <p className="text-sm lg:text-base">{description}</p>
+            <h3 className="font-semibold lg:text-lg text-base  text-mocha-200">{title}</h3>
+            <p className="text-sm">{description}</p>
           </div>
           <div className="flex flex-col gap-2">
-            <p className="font-medium text-base">Outils</p>
+            <p className="font-medium lg:text-base text-sm">Outils</p>
             <div className="flex gap-1 flex-wrap">
               {softwares.map(
                 (software, index) => (

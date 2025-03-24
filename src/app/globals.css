@@ -12,8 +12,10 @@
 }
 
 @font-face {
-  font-family: "michael", sans-serif;
-  src: url("../app/assets/fonts/michael.ttf") format("truetype");
+  font-family: "michael";
+  src: url("@/assets/fonts/michael.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
 }
 
 :root {
@@ -212,6 +214,10 @@ body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
+
+.font-michael {
+  font-family: "michael";
 }
 
 .background-hero {

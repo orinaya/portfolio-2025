@@ -12,7 +12,7 @@ export default function Home() {
     <>
       {/* <h2 className="p-1 bg-red-500 text-center text-white ">⚠️En cours de construction⚠️</h2> */}
 
-      <div className="min-h-screen overflow-x-hidden">
+      <div className="min-h-screen overflow-x-hidden text-mocha-200">
         <NavbarComponent />
         <HeroComponent />
         <AboutComponent />

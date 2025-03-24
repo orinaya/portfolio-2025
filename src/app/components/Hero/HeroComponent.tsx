@@ -12,7 +12,7 @@ function HeroComponent() {
           </span>
           <span className="text-strawberry-700 md:text-5xl text-5xl font-bold font-michael">Oriane</span>
         </h1>
-        <div className="w-[1182px] h-[158px] relative mb-[182px]">
+        <div className="w-[1182px] h-[158px] relative mb-[182px] mt-8">
           <div className="relative lg:text-[158px] text-6xl font-bold title">Développeuse</div>
           <div className="left-[952px] top-[143px] absolute text-center justify-start text-[#3b2f2f] text-xl font-light">
             basée à Nantes.

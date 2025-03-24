@@ -23,13 +23,13 @@ function NavbarComponent() {
   return (
     <>
       <nav
-        className={`fixed w-full z-50 flex justify-between items-center py-2 lg:py-4 px-8 transition-all duration-300 ${
+        className={`fixed w-full z-50 flex justify-between items-center py-2 lg:py-2 px-8 transition-all duration-300 ${
           isScrolled ? "bg-milk-980" : "bg-transparent"
         }`}
       >
         {/* Logo */}
         <div className="flex items-center lg:w-1/5">
-          <Link href="/" className="text-strawberry-700 text-lg lg:text-2xl font-bold font-michael">
+          <Link href="/" className="text-strawberry-700 text-lg lg:text-2xl font-michael">
             Oriane Ratelade
           </Link>
         </div>
