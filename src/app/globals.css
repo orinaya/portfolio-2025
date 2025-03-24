@@ -4,8 +4,7 @@
   font-family: "icomoon";
   src: url("assets/icomoon/icomoon.eot");
   src: url("assets/icomoon/icomoon.eot") format("embedded-opentype"),
-    url("assets/icomoon/icomoon.ttf") format("truetype"),
-    url("assets/icomoon/icomoon.woff") format("woff"),
+    url("assets/icomoon/icomoon.ttf") format("truetype"), url("assets/icomoon/icomoon.woff") format("woff"),
     url("assets/icomoon/icomoon.svg") format("svg");
   font-weight: normal;
   font-style: normal;
@@ -94,48 +93,96 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-brain:before {
-  content: "\e900";
-}
-.icon-eye:before {
-  content: "\e901";
-}
-.icon-calendar:before {
+.icon-menu:before {
   content: "\e902";
 }
-.icon-wheel:before {
-  content: "\e903";
+.icon-chart:before {
+  content: "\e900";
 }
-.icon-map-point:before {
+.icon-close-circle:before {
+  content: "\e901";
+}
+.icon-question:before {
   content: "\e904";
 }
-.icon-letter:before {
+.icon-double-arrow-up:before {
   content: "\e905";
 }
-.icon-fire:before {
+.icon-phone:before {
   content: "\e906";
 }
-.icon-academic-cap:before {
+.icon-arrow-left:before {
   content: "\e907";
 }
-.icon-case-round:before {
+.icon-arrow-right:before {
   content: "\e908";
 }
-.icon-laptop:before {
+.icon-code:before {
   content: "\e909";
 }
-.icon-github:before {
+.icon-controller:before {
   content: "\e90a";
 }
-.icon-lang:before {
+.icon-copy:before {
   content: "\e90b";
 }
-.icon-square-top-down:before {
+.icon-link:before {
   content: "\e90c";
+}
+.icon-ruler-pen:before {
+  content: "\e90d";
+}
+.icon-widget:before {
+  content: "\e90e";
+}
+.icon-window-frame:before {
+  content: "\e90f";
+}
+.icon-linkedin:before {
+  content: "\e910";
+}
+.icon-brain:before {
+  content: "\e911";
+}
+.icon-eye:before {
+  content: "\e912";
+}
+.icon-calendar:before {
+  content: "\e913";
+}
+.icon-wheel:before {
+  content: "\e914";
+}
+.icon-map-point:before {
+  content: "\e915";
+}
+.icon-letter:before {
+  content: "\e916";
+}
+.icon-fire:before {
+  content: "\e917";
+}
+.icon-cap:before {
+  content: "\e918";
+}
+.icon-case-round:before {
+  content: "\e919";
+}
+.icon-laptop:before {
+  content: "\e91a";
+}
+.icon-github:before {
+  content: "\e91b";
+}
+.icon-lang:before {
+  content: "\e91c";
+}
+.icon-square-top-down:before {
+  content: "\e91d";
   font-size: 16px;
 }
 .icon-download:before {
-  content: "\e90d";
+  content: "\e91e";
 }
 
 /* @media (prefers-color-scheme: light) {

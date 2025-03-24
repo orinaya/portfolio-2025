@@ -1,17 +1,15 @@
 "use client";
 
-import React, {useState} from "react";
-import {EducationTypes} from "@/definitions/types";
+import React, { useState } from "react";
+import { EducationTypes } from "@/definitions/types";
 import TitleComponent from "@/components/TitleComponent";
-import {educationData} from "@/datas/educationData";
+import { educationData } from "@/datas/educationData";
 
 function TimelineComponent() {
-  const [selectedEducation, setSelectedEducation] = useState<EducationTypes | null>(
-    educationData[0]
-  );
+  const [selectedEducation, setSelectedEducation] = useState<EducationTypes | null>(educationData[0]);
 
   return (
-    <div className="relative z-20 bg-milk-900 lg:p-24" id="parcours">
+    <div className="relative z-20 bg-milk-900 lg:p-24 py-16" id="parcours">
       <div className="max-w-7xl mx-auto p-6">
         <TitleComponent uptitle="Mon parcours" title="Plongez dans mon histoire" />
 

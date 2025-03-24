@@ -5,7 +5,9 @@ export interface ButtonProps {
   routeLink?: string;
   iconBefore?: string;
   iconAfter?: string;
+  iconCenter?: string;
   target?: string;
+  className?: string;
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
@@ -40,20 +42,27 @@ export interface SoftSkill {
   text: string;
 }
 
+export interface ProjectFilterTypes {
+  id: number;
+  label: string;
+  value: string;
+  icon: string;
+}
 export interface ProjectTypes {
   id: number;
-  path: string;
-  category: string[];
+  path?: string;
+  category?: string[];
   title: string;
   description: string;
+  project_status: string;
   image: string;
   softwares: string[];
-  banner: string;
-  hashtag: string;
-  big_description: string;
+  banner?: string;
+  hashtag?: string;
+  big_description?: string;
   first_image?: string;
   second_image?: string;
-  details: {
+  details?: {
     softwares: string[];
     role: string[];
     team?: string[];

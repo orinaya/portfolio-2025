@@ -16,8 +16,8 @@ function PassionsComponent() {
         <div className="md:grid md:grid-cols-7 md:gap-5 gap-2 flex flex-wrap">
           <div className="col-span-3 w-full flex flex-col bg-[#FEECEC] py-4 px-6 items-center justify-center gap-3 rounded-xl hover:scale-105 transition-transform duration-200 hover:drop-shadow-xl">
             <div className="flex gap-2 items-center justify-center text-2xl font-semibold text-melon-600">
-              <Image src={sportCar} alt="Sportcar Icon" width={24} height={24} />
-              <h3 className="text-center text-lg text-[DB6757]">Automobile</h3>
+              <Image src={sportCar} alt="Sportcar Icon" width={26} height={26} />
+              <h3 className="text-center text-base lg:text-lg text-[DB6757]">Automobile</h3>
             </div>
             <p className="text-center text-sm">Endurance et Formule 1</p>
           </div>
@@ -54,8 +54,8 @@ function PassionsComponent() {
 
           <div className="col-span-3 flex flex-col py-2 px-4 items-center justify-center gap-3 rounded-xl bg-[#DEDFED] hover:scale-105 transition-transform duration-200 hover:drop-shadow-xl w-full">
             <div className="flex gap-2 items-center justify-center text-2xl font-semibold text-verdigris-400">
-              <Image src={magicHatIcon} alt="magic hat Icon" width={24} height={24} />
-              <h3 className="text-center text-lg text-[#4C4E8B]">Fantasy / Sci-fi</h3>
+              <Image src={magicHatIcon} alt="magic hat Icon" width={20} height={20} />
+              <h3 className="text-center text-base lg:text-lg text-[#4C4E8B]">Fantasy / Sci-fi</h3>
             </div>
             <p className="text-center text-sm">Seigneur des Anneaux / Star Wars / Doctor Who</p>
           </div>
@@ -92,8 +92,8 @@ function PassionsComponent() {
 
           <div className="col-span-3 flex flex-col py-2 px-4 items-center justify-center gap-3 rounded-xl bg-[#EEF3E2] hover:scale-105 transition-transform duration-200 hover:drop-shadow-xl w-full">
             <div className="flex gap-2 items-center justify-center text-2xl font-semibold text-darkOlive-400  ">
-              <Image src={diceIcon} alt="Dice Icon" width={24} height={24} />
-              <h3 className="text-center text-lg text-[#98BA52]">Jeux</h3>
+              <Image src={diceIcon} alt="Dice Icon" width={20} height={20} />
+              <h3 className="text-center text-base lg:text-lg text-[#98BA52]">Jeux</h3>
             </div>
             <p className="text-center text-sm">Jeux de société / Jeux de rôle / Jeux vidéos</p>
           </div>

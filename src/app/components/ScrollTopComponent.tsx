@@ -1,5 +1,5 @@
 "use client";
-import {useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import ButtonComponent from "@/components/ButtonComponent";
 
 function ScrollTopComponent() {
@@ -12,7 +12,7 @@ function ScrollTopComponent() {
   };
 
   const scrollToTop = (): void => {
-    window.scrollTo({top: 0, behavior: "smooth"});
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   useEffect(() => {
@@ -27,13 +27,13 @@ function ScrollTopComponent() {
 
   return (
     <>
-      <div className="z-50 fixed bottom-6 right-6 h-14 w-14">
+      <div className="z-50 fixed bottom-10 right-6 h-14 w-14">
         <ButtonComponent
-          iconBefore="double-arrow-up"
-          title="coucou"
-          colorBg="strawberry-900"
-          colorText="strawberry-200"
+          iconCenter="double-arrow-up"
+          colorBg="bg-strawberry-900"
+          colorText="text-strawberry-200"
           onClick={scrollToTop}
+          className="py-4"
         />
       </div>
     </>

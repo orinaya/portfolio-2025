@@ -6,14 +6,14 @@ function HeroComponent() {
   return (
     <>
       <div className="background-hero bg-[#E9E2E2] fixed w-full h-screen flex flex-col justify-center items-center px-8">
-        <div className="text-center justify-start gap-3 flex">
-          <span className="text-mocha-200 text-5xl font-bold font-michael">
+        <h1 className="text-center justify-start gap-3 flex flex-col md:flex-row">
+          <span className="text-mocha-200 md:text-5xl text-3xl font-bold font-michael">
             Hello, je m’appelle
           </span>
-          <span className="text-strawberry-700 text-5xl font-bold font-michael">Oriane</span>
-        </div>
+          <span className="text-strawberry-700 md:text-5xl text-5xl font-bold font-michael">Oriane</span>
+        </h1>
         <div className="w-[1182px] h-[158px] relative mb-[182px]">
-          <div className="relative text-[158px] font-bold title">Développeuse</div>
+          <div className="relative lg:text-[158px] text-6xl font-bold title">Développeuse</div>
           <div className="left-[952px] top-[143px] absolute text-center justify-start text-[#3b2f2f] text-xl font-light">
             basée à Nantes.
           </div>

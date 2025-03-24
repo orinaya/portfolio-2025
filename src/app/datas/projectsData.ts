@@ -1,4 +1,12 @@
-import {ProjectTypes} from "@/definitions/types";
+import { ProjectFilterTypes, ProjectTypes } from "@/definitions/types";
+
+export const projectsFiltersData: ProjectFilterTypes[] = [
+  { id: 1, label: "Tous mes projets", value: "all", icon: "widget" },
+  { id: 2, label: "Développement", value: "DEVELOPPEMENT", icon: "code" },
+  { id: 3, label: "UX/UI", value: "UX/UI", icon: "window-frame" },
+  { id: 4, label: "Design", value: "DESIGN GRAPHIQUE", icon: "ruler-pen" },
+  { id: 5, label: "Marketing", value: "MARKETING", icon: "chart" },
+];
 
 export const projectsData: ProjectTypes[] = [
   //EQUINOX
@@ -8,6 +16,7 @@ export const projectsData: ProjectTypes[] = [
     category: ["DEVELOPPEMENT", "DESIGN GRAPHIQUE", "MARKETING"],
     title: "Equinox",
     description: "Création d'un jeu vidéo lors d'une Game Jam",
+    project_status: "Terminé",
     image: "equinox",
     softwares: ["godot", "aseprite"],
     banner: "equinox/equinox-banner.jpg",
@@ -40,9 +49,10 @@ export const projectsData: ProjectTypes[] = [
   {
     id: 1,
     path: "mapeach",
-    category: ["DEVELOPPEMENT", "WEBDESIGN", "MARKETING"],
+    category: ["DEVELOPPEMENT", "UX/UI", "MARKETING"],
     title: "MaPeach",
     description: "Application de rendez-vous pour couple",
+    project_status: "Terminé",
     image: "mapeach",
     softwares: ["figma", "wordpress"],
     banner: "mapeach/mapeach-banner.jpg",
@@ -107,9 +117,10 @@ export const projectsData: ProjectTypes[] = [
   {
     id: 4,
     path: "plantopia",
-    category: ["DEVELOPPEMENT", "WEBDESIGN"],
+    category: ["DEVELOPPEMENT", "UX/UI"],
     title: "Plantopia",
     description: "Site e-commerce de plantes",
+    project_status: "Terminé",
     image: "plantopia",
     softwares: ["figma", "html", "css", "js"],
     banner: "plantopia/plantopia-banner.jpg",
@@ -132,8 +143,9 @@ export const projectsData: ProjectTypes[] = [
     id: 5,
     path: "le-dedale",
     title: "Le Dédale",
-    category: ["DEVELOPPEMENT", "WEBDESIGN"],
+    category: ["DEVELOPPEMENT", "UX/UI"],
     description: "Site boutique-café d'un client",
+    project_status: "Terminé",
     image: "dedale",
     softwares: ["figma", "wordpress", "elementor", ""],
     banner: "dedale/dedale-banner.jpg",
@@ -160,8 +172,9 @@ export const projectsData: ProjectTypes[] = [
     id: 6,
     path: "le-seigneur-des-anneaux",
     title: "Le Seigneur des Anneaux",
-    category: ["DEVELOPPEMENT", "WEBDESIGN"],
+    category: ["DEVELOPPEMENT", "UX/UI"],
     description: "Site de films",
+    project_status: "Terminé",
     image: "lotr",
     softwares: ["figma", "php"],
     banner: "lotr/lotr-banner.jpg",
@@ -183,8 +196,9 @@ export const projectsData: ProjectTypes[] = [
     id: 7,
     path: "pause-connect",
     title: "Pause Connect",
-    category: ["DEVELOPPEMENT", "WEBDESIGN"],
+    category: ["DEVELOPPEMENT", "UX/UI"],
     description: "Site de sensibilisation addiction",
+    project_status: "Terminé",
     image: "pauseconnect",
     softwares: ["figma", "html", "css", "vue"],
     banner: "pause-connect/pause-connect-banner.jpg",
@@ -219,6 +233,7 @@ export const projectsData: ProjectTypes[] = [
     path: "ghibli",
     category: ["DEVELOPPEMENT"],
     description: "Site de films",
+    project_status: "Terminé",
     image: "ghibli",
     softwares: ["figma", "html", "css", "vue"],
     banner: "ghibli/ghibli-banner.jpg",

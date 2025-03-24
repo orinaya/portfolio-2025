@@ -30,7 +30,7 @@ function Footer() {
                 <div>
                   <p className="font-semibold ">Téléphone</p>
                   <p className="flex items-center gap-2">
-                    <span className="icon-tel"></span>07 70 35 45 69
+                    <span className="icon-phone"></span>07 70 35 45 69
                   </p>
                 </div>
               </div>

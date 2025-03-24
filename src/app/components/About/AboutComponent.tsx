@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 
 import PassionsComponent from "@/components/About/PassionsComponent";
 import TitleComponent from "@/components/TitleComponent";
@@ -28,7 +28,7 @@ function AboutComponent() {
     <>
       <div
         id="a-propos"
-        className={` left-0 w-full bg-milk-980 text-mocha-200 rounded-t-3xl z-10 transform mt-[100vh] lg:px-8 px-4 py-16 md:p-24 transition-transform duration-300 ${
+        className={` left-0 w-full bg-milk-980 text-mocha-200 rounded-t-3xl z-10 transform mt-[100vh] lg:px-8 px-4 py-20 md:p-24 transition-transform duration-300 ${
           scrolled ? "translate-y-0" : "translate-y-16"
         }`}
       >
@@ -49,8 +49,8 @@ function AboutComponent() {
               <br />
               <p className="text-base font-light">
                 <span className="text-base font-medium">Mon but ?</span> Poursuivre mes études en{" "}
-                <strong className="font-medium">MBA Développeur Full-Stack</strong> et pourquoi pas,
-                vous rejoindre pour une alternance, et ce dès{" "}
+                <strong className="font-medium">MBA Développeur Full-Stack</strong> et pourquoi pas, vous
+                rejoindre pour une alternance, et ce dès{" "}
                 <strong className="font-medium">septembre 2025</strong>.
               </p>
 
