@@ -13,7 +13,7 @@
 
 @font-face {
   font-family: "michael";
-  src: url("@/assets/fonts/michael.ttf") format("truetype");
+  src: url("../app/assets/fonts/michael.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
