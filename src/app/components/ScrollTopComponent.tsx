@@ -31,9 +31,9 @@ function ScrollTopComponent() {
         <ButtonComponent
           iconCenter="double-arrow-up"
           colorBg="bg-strawberry-900"
-          colorBgHover="bg-strawberry-800"
           colorText="text-strawberry-200"
-          colorTextHover="text-strawberry-300"
+          colorBgHover="hover:bg-strawberry-800"
+          colorTextHover="hover:text-strawberry-300"
           onClick={scrollToTop}
           className="py-3"
         />

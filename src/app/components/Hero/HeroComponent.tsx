@@ -50,7 +50,7 @@ function HeroComponent() {
                 colorBg="bg-cremeBrulee-800"
                 colorBgHover="hover:bg-cremeBrulee-700"
                 colorText="text-cremeBrulee-200"
-                colorTextHover="hover:text-cremeBrulee-300"
+                colorTextHover="hover:text-cremeBrulee-200"
                 routeLink="https://drive.google.com/file/d/13uXVJyO05jd0KePHcqGPa8Sc7x939lHe/view?usp=drive_link"
                 iconBefore="download"
               />

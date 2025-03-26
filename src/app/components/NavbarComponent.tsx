@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import ButtonComponent from "@/components/ButtonComponent";
-import { useEffect, useState } from "react";
+import {useEffect, useState} from "react";
 
 function NavbarComponent() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -53,24 +53,30 @@ function NavbarComponent() {
         {/* GitHub & Contact */}
         <div className="hidden lg:flex gap-4 items-center w-1/5">
           <ButtonComponent
-            title="Contact"
-            colorBg="bg-strawberry-900"
-            colorText="text-strawberry-200"
-            routeLink="#"
-            iconBefore="letter"
-          />
-          <ButtonComponent
             title="Github"
-            colorBg="bg-strawberry-900"
-            colorText="text-strawberry-200"
+            colorBg="transparent"
+            colorText="=text-strawberry-200"
+            colorBgHover="hover:bg-strawberry-800"
+            colorTextHover="hover:text-strawberry-300"
             routeLink="https://github.com/orinaya"
             iconBefore="github"
+          />
+          <ButtonComponent
+            title="Contact"
+            colorBg="bg-strawberry-800"
+            colorText="text-strawberry-200"
+            colorBgHover="hover:bg-strawberry-700"
+            colorTextHover="hover:text-milk-980"
+            routeLink="#"
+            iconBefore="letter"
           />
         </div>
         <div className="lg:hidden">
           <ButtonComponent
             colorBg="bg-strawberry-900"
             colorText="text-strawberry-200"
+            colorBgHover="hover:bg-strawberry-800"
+            colorTextHover="hover:text-strawberry-300"
             routeLink="https://github.com/orinaya"
             iconCenter="menu"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -86,6 +92,8 @@ function NavbarComponent() {
             <ButtonComponent
               colorBg="bg-strawberry-900"
               colorText="text-strawberry-200"
+              colorBgHover="hover:bg-strawberry-800"
+              colorTextHover="hover:text-strawberry-300"
               routeLink="https://github.com/orinaya"
               iconCenter="close-circle"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -108,19 +116,23 @@ function NavbarComponent() {
             </Link>
             <div className="mt-6 flex flex-col gap-4 w-full max-w-xs">
               <ButtonComponent
-                title="Contact"
-                colorBg="bg-strawberry-900"
-                colorText="text-strawberry-200"
-                routeLink="#"
-                iconBefore="letter"
+                title="Github"
+                colorBg="transparent"
+                colorText="=text-strawberry-200"
+                colorBgHover="hover:bg-strawberry-800"
+                colorTextHover="hover:text-strawberry-300"
+                routeLink="https://github.com/orinaya"
+                iconBefore="github"
                 onClick={handleClick}
               />
               <ButtonComponent
-                title="Github"
-                colorBg="bg-strawberry-900"
+                title="Contact"
+                colorBg="bg-strawberry-800"
                 colorText="text-strawberry-200"
-                routeLink="https://github.com/orinaya"
-                iconBefore="github"
+                colorBgHover="hover:bg-strawberry-700"
+                colorTextHover="hover:text-milk-980"
+                routeLink="#"
+                iconBefore="letter"
                 onClick={handleClick}
               />
             </div>
