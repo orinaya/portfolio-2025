@@ -31,8 +31,8 @@ function HeroComponent() {
           <div className="z-50 bg-milk-980 p-4 rounded-xl flex flex-col gap-4 justify-center items-center">
             <span className="absolute icon-eye z-50 text-cremeBrulee-200 -top-6 left-6 bg-cremeBrulee-800 rounded-full p-2 border-1 border-solid border-cremeBrulee-600"></span>
             <div className="lg:w-2xl w-auto text-center pt-1.5">
-              Étudiante en Développement Web, j'entame dès septembre un MBA Développeur Full-Stack.
-              C'est pourquoi je recherche une alternance dans ce domaine !
+              Étudiante en Développement Web, j&apos;entame dès septembre un MBA Développeur
+              Full-Stack. C&apos;est pourquoi je recherche une alternance dans ce domaine !
             </div>
             <div className="z-10 flex lg:flex-row flex-col gap-4">
               <ButtonComponent
