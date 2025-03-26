@@ -8,6 +8,8 @@ export interface ButtonProps {
   iconCenter?: string;
   target?: string;
   className?: string;
+  colorBgHover: string;
+  colorTextHover: string;
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
@@ -75,4 +77,25 @@ export interface ProjectTypes {
     color: string;
   }[];
   date: number;
+}
+
+export interface FramerProps {
+  xInitial?: number;
+  xWhileInView?: number;
+  yInitial?: number;
+  yWhileInView?: number;
+  children?: any;
+  className?: string;
+  scaleInitial?: number;
+  scaleWhileInView?: number;
+  transitionDuration?: number;
+  transitionDelay?: number;
+  layoutId?: string;
+}
+
+export interface TypewriterTypes {
+  text: string;
+  speed?: number;
+  className?: string;
+  delay?: number;
 }
