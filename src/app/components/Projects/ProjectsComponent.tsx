@@ -1,22 +1,14 @@
 "use client";
-
 import {useState, useMemo, Fragment} from "react";
 import {projectsData, projectsFiltersData} from "@/datas/projectsData";
-// import { useRouter } from "next/navigation";
 import CardComponent from "@/components/Projects/CardComponent";
 import TitleComponent from "@/components/TitleComponent";
 import ButtonComponent from "@/components/ButtonComponent";
 import FramerMotion from "../Animation/FramerMotion";
 
-const ProjectsPage = () => {
-  // const router = useRouter();
-
+const ProjectsComponent = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [selectedSort] = useState<string>("default");
-
-  // const getProjectDetails = (path: string) => {
-  //   router.push(`/projets/${path}`);
-  // };
 
   const filteredProjects = useMemo(() => {
     let filtered = [...projectsData];
@@ -37,12 +29,13 @@ const ProjectsPage = () => {
   }, [selectedCategory, selectedSort]);
 
   return (
-    <div id="projets" className="relative bg-mocha-950 lg:p-24 py-16 z-20">
-      <div className="max-w-7xl mx-auto p-6">
+    <div id="projets" className="relative bg-mocha-950 py-16 lg:py-24 z-20">
+      <div className="max-w-7xl mx-auto px-6">
         <TitleComponent uptitle="Mes projets" title="Suivez l’évolution de mes projets" />
+
         <FramerMotion yInitial={50} yWhileInView={0}>
-          <div className="flex flex-col lg:flex-row justify-between items-center mb-6">
-            <div className="flex flex-wrap gap-5 py-6 relative">
+          <div className="flex flex-col lg:flex-row justify-between items-center mb-6 gap-4">
+            <div className="flex flex-wrap gap-4 lg:gap-6 py-6">
               {projectsFiltersData.map((item) => (
                 <div key={item.id} className="relative">
                   {selectedCategory === item.value && (
@@ -55,7 +48,7 @@ const ProjectsPage = () => {
                   <ButtonComponent
                     title={item.label}
                     iconBefore={item.icon}
-                    className="flex items-center gap-2 px-4 py-2 rounded-md text-sm lg:text-lg font-light transition-colors duration-300 "
+                    className="flex items-center gap-2 px-4 py-2 rounded-md text-sm lg:text-lg font-light transition-colors duration-300"
                     onClick={() => setSelectedCategory(item.value)}
                     colorBg="bg-transparent"
                     colorBgHover="hover:bg-mocha-900"
@@ -66,33 +59,21 @@ const ProjectsPage = () => {
               ))}
             </div>
 
-            <div className="bg-cremeBrulee-800 text-cremeBrulee-300 px-3 py-1 rounded-full">
-              {filteredProjects.length} résultats
+            <div className="bg-cremeBrulee-800 text-cremeBrulee-300 px-4 py-2 rounded-full text-sm lg:text-base font-semibold">
+              {filteredProjects.length} {filteredProjects.length > 1 ? "projets" : "projet"}
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-8">
             {filteredProjects.map((item) => (
-              // <CardComponent
-              //   key={item.id}
-              //   id={item.id}
-              //   title={item.title}
-              //   description={item.description}
-              //   image={projectsImgMapping[item.image]}
-              //   softwares={item.softwares}
-              //   date={item.date}
-              //   onClick={() => getProjectDetails(item.path)}
-              // />
               <Fragment key={item.id}>
                 <CardComponent
-                  key={item.id}
                   id={item.id}
                   title={item.title}
                   description={item.description}
                   image={item.image}
                   softwares={item.softwares}
                   date={item.date}
-                  project_status={item.project_status}
                 />
               </Fragment>
             ))}
@@ -103,4 +84,4 @@ const ProjectsPage = () => {
   );
 };
 
-export default ProjectsPage;
+export default ProjectsComponent;

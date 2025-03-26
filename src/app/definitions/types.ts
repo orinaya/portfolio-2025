@@ -52,12 +52,12 @@ export interface ProjectFilterTypes {
   icon: string;
 }
 export interface ProjectTypes {
+  // onClick?: (event: React.MouseEvent<HTMLElement>) => void;
   id: number;
   path?: string;
   category?: string[];
   title: string;
   description: string;
-  project_status: string;
   image: string;
   softwares: string[];
   banner?: string;
