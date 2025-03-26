@@ -1,6 +1,4 @@
 "use client";
-
-import {motion} from "framer-motion";
 import {hardSkills, langSkills, softSkills} from "@/datas/skillsData";
 import SkillCategory from "@/components/Skills/SkillCategory";
 import SoftSkillItem from "@/components/Skills/SoftSkillItem";

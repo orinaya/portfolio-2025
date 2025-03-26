@@ -1,5 +1,4 @@
 import Image from "next/image";
-import {motion} from "framer-motion";
 import {ProjectTypes} from "@/definitions/types";
 import IconMapping from "@/utils/iconMapping";
 import projectsImgMapping from "@/utils/projectsImgMapping";

@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import {useEffect, useState} from "react";
-import {motion} from "framer-motion";
 import PassionsComponent from "@/components/About/PassionsComponent";
 import TitleComponent from "@/components/TitleComponent";
 import ButtonParticle from "@/components/ButtonComponent";

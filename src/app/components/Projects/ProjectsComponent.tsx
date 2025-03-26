@@ -1,7 +1,6 @@
 "use client";
 
 import {useState, useMemo, Fragment} from "react";
-import {motion} from "framer-motion";
 import {projectsData, projectsFiltersData} from "@/datas/projectsData";
 // import { useRouter } from "next/navigation";
 import CardComponent from "@/components/Projects/CardComponent";
