@@ -55,6 +55,7 @@ const ProjectDetailComponent = ({}) => {
           colorBgHover="hover:bg-mocha-700"
           colorTextHover="hover:text-mocha-200"
           routeLink="/#projets"
+          iconBefore="arrow-left"
           className="w-fit my-8"
         />
         {works.path === "equinox" && (
