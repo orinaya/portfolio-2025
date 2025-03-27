@@ -68,7 +68,8 @@ function AboutComponent() {
                   colorBgHover="hover:bg-strawberry-800"
                   colorText="text-strawberry-200"
                   colorTextHover="hover:text-strawberry-300"
-                  routeLink="#"
+                  routeLink="https://www.linkedin.com/in/oriane-ratelade/"
+                  target="_blank"
                   iconBefore="letter"
                 />
               </div>

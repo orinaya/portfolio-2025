@@ -59,6 +59,7 @@ function NavbarComponent() {
             colorBgHover="hover:bg-strawberry-800"
             colorTextHover="hover:text-strawberry-300"
             routeLink="https://github.com/orinaya"
+            target="_blank"
             iconBefore="github"
           />
           <ButtonComponent
@@ -67,7 +68,8 @@ function NavbarComponent() {
             colorText="text-strawberry-200"
             colorBgHover="hover:bg-strawberry-700"
             colorTextHover="hover:text-milk-980"
-            routeLink="#"
+            routeLink="https://www.linkedin.com/in/oriane-ratelade/"
+            target="_blank"
             iconBefore="letter"
           />
         </div>
@@ -77,7 +79,7 @@ function NavbarComponent() {
             colorText="text-strawberry-200"
             colorBgHover="hover:bg-strawberry-800"
             colorTextHover="hover:text-strawberry-300"
-            routeLink="https://github.com/orinaya"
+            target="_blank"
             iconCenter="menu"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           />
@@ -94,7 +96,6 @@ function NavbarComponent() {
               colorText="text-strawberry-200"
               colorBgHover="hover:bg-strawberry-800"
               colorTextHover="hover:text-strawberry-300"
-              routeLink="https://github.com/orinaya"
               iconCenter="close-circle"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="m-auto"
@@ -123,6 +124,7 @@ function NavbarComponent() {
                 colorTextHover="hover:text-strawberry-300"
                 routeLink="https://github.com/orinaya"
                 iconBefore="github"
+                target="_blank"
                 onClick={handleClick}
               />
               <ButtonComponent
@@ -131,8 +133,9 @@ function NavbarComponent() {
                 colorText="text-strawberry-200"
                 colorBgHover="hover:bg-strawberry-700"
                 colorTextHover="hover:text-milk-980"
-                routeLink="#"
+                routeLink="https://www.linkedin.com/in/oriane-ratelade/"
                 iconBefore="letter"
+                target="_blank"
                 onClick={handleClick}
               />
             </div>

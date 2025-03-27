@@ -41,7 +41,7 @@ function HeroComponent() {
                 colorBgHover="hover:bg-strawberry-800"
                 colorText="text-strawberry-300"
                 colorTextHover="hover:text-strawberry-200"
-                routeLink="#"
+                routeLink="#projets"
                 iconBefore="eye"
               />
               <ButtonComponent
