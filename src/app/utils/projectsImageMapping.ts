@@ -18,6 +18,10 @@ import ghibliBanner from "../assets/images/projects/ghibli/ghibli-banner.jpg";
 import defaultImg from "../assets/images/default.png";
 
 import apiFirstImage from "../assets/images/projects/api/api-1.jpg";
+import pauseConnectFirstImage from "../assets/images/projects/pauseconnect/pause-connect-2.jpg";
+import ghibliFirstImage from "../assets/images/projects/ghibli/ghibli-2.jpg";
+import mapeachFirstImage from "../assets/images/projects/mapeach/mapeach-2.jpg";
+import plantopiaFirstImage from "../assets/images/projects/plantopia/plantopia-1.jpg";
 
 const projectsImageMapping: Record<string, string> = {
   // COVER
@@ -42,6 +46,10 @@ const projectsImageMapping: Record<string, string> = {
   ghibliBanner: ghibliBanner.src,
 
   apiFirstImage: apiFirstImage.src,
+  pauseConnectFirstImage: pauseConnectFirstImage.src,
+  ghibliFirstImage: ghibliFirstImage.src,
+  mapeachFirstImage: mapeachFirstImage.src,
+  plantopiaFirstImage: plantopiaFirstImage.src,
 };
 
 export default projectsImageMapping;

@@ -23,6 +23,7 @@ import langEnIcon from "@/assets/icons/lang-en.svg";
 import godotIcon from "@/assets/icons/godot.svg";
 import wooIcon from "@/assets/icons/woo.svg";
 import nextIcon from "@/assets/icons/nextjs.svg";
+import asepriteIcon from "@/assets/icons/aseprite.svg";
 
 type IconProps = {
   src: string;
@@ -56,6 +57,7 @@ const IconMapping: Record<string, IconProps> = {
   langen: langEnIcon,
   godot: godotIcon,
   woo: wooIcon,
+  aseprite: asepriteIcon,
 };
 
 export default IconMapping;

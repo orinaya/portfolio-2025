@@ -14,7 +14,7 @@ export interface ButtonProps {
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-export type EducationTypes = {
+export interface EducationTypes {
   id: number;
   years: string;
   title: string;
@@ -23,14 +23,14 @@ export type EducationTypes = {
   description?: string;
   skills?: string[];
   achievements?: string[];
-};
+}
 
-export type TitleProps = {
+export interface TitleProps {
   uptitle?: string;
   title: string;
   downtitle?: string;
   small?: boolean;
-};
+}
 
 export interface SkillItem {
   name: string;
@@ -78,6 +78,7 @@ export interface ProjectTypes {
     href: string;
     title: string;
     color: string;
+    iconBefore?: string;
   }[];
   date: number;
 }
@@ -101,4 +102,12 @@ export interface TypewriterTypes {
   speed?: number;
   className?: string;
   delay?: number;
+}
+
+export interface BreadcrumbTypes {
+  pageName: string;
+  previousPages: {
+    path: string;
+    name: string;
+  }[];
 }

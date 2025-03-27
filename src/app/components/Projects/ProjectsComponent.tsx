@@ -12,16 +12,6 @@ const ProjectsComponent = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [selectedSort] = useState<string>("default");
 
-  // const handleClick = (path: string) => {
-  //   router.push(`/projets/${path}`);
-  // };
-
-  // const selectedSort = "default";
-
-  // const handleClick = (path: string) => {
-  //   router.push(`/projets/${path}`);
-  // };
-
   const handleClick = (path?: string) => {
     if (path) {
       router.push(`/${path}`);
@@ -82,7 +72,7 @@ const ProjectsComponent = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 lg:gap-8">
             {filteredProjects.map((item) => (
               <Fragment key={item.id}>
                 <CardComponent

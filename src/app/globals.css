@@ -96,6 +96,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-bell:before {
+  content: "\e903";
+}
 .icon-menu:before {
   content: "\e902";
 }

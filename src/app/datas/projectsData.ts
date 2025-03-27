@@ -13,35 +13,32 @@ export const projectsData: ProjectTypes[] = [
   {
     id: 0,
     path: "portfolio",
-    category: ["DEVELOPPEMENT"],
+    category: ["DEVELOPPEMENT", "UX/UI"],
     title: "Portfolio 2025",
     description: "Création de mon portfolio",
     image: "portfolioCover",
-    softwares: ["next", "typescript", "tailwindcss"],
+    softwares: ["next", "typescript", "tailwind", "figma"],
     banner: "portfolioBanner",
     hashtag: "#Portfolio #Next.js",
     big_description: "Découvrez mon portfolio réalisé en Next.js et Typescript ! ",
-    // first_image: "",
-    second_image: "portfolio/portfolio-2.jpg",
     details: {
-      softwares: ["next.js", "typescript", "tailwindcss"],
-      role: ["Développement"],
-      team: ["Seule"],
-      // teamLink: [""],
+      softwares: ["next", "typescript", "tailwind", "figma"],
+      role: ["Développement", "Maquettage"],
       school_year: "Bachelor Développement Web - Année 3",
     },
     buttons: [
       {
         href: "https://github.com/orinaya/portfolio-2025",
-        title: "Github",
+        title: "Lien Github",
         color: "strawberry",
+        iconBefore: "github",
       },
     ],
     date: 8,
   },
   //EQUINOX
   {
-    id: 2,
+    id: 1,
     path: "equinox",
     category: ["DEVELOPPEMENT", "DESIGN GRAPHIQUE", "MARKETING"],
     title: "Equinox",
@@ -51,9 +48,7 @@ export const projectsData: ProjectTypes[] = [
     banner: "equinoxBanner",
     hashtag: "#GameJam #PitchDeck",
     big_description:
-      "L'année dernière Atlangames nous proposaient une Game Jam sur le thème “𝗳𝗿𝗼𝗻𝘁𝗶𝗲̀𝗿𝗲𝘀”. Le but ? Créer un jeu vidéo et en faire sa promotion en 4 jours, le tout en concurrence avec 17 autres écoles. De cette semaine est né “𝗘𝗾𝘂𝗶𝗻𝗼𝘅”, notre jeu de plateforme 2D. Il met en scène 𝗡𝗼𝘅, un petit chat décédé qui essaie de récupérer ses 7 vies restantes en traversant la frontière entre paradis et enfer. Avec ce jeu, nous remportons pour MyDigitalSchool Nantes, l’𝗔𝘄𝗮𝗿𝗱 𝗱𝗲 𝗹𝗮 𝗠𝗲𝗶𝗹𝗹𝗲𝘂𝗿𝗲 𝗗𝗶𝗿𝗲𝗰𝘁𝗶𝗼𝗻 𝗔𝗿𝘁𝗶𝘀𝘁𝗶𝗾𝘂𝗲 ! À vous de jouer désormais ! 🎮",
-    first_image: "",
-    second_image: "equinox/equinox-2.jpg",
+      "L'année dernière, Atlangames nous proposait une Game Jam sur le thème 'frontières'. Le but ? Créer un jeu vidéo et en faire sa promotion en 4 jours, le tout en concurrence avec 17 autres écoles. De cette semaine est né 'Equinox', notre jeu de plateforme 2D. Il met en scène Nox, un petit chat décédé qui essaie de récupérer ses 7 vies restantes en traversant la frontière entre paradis et enfer. Avec ce jeu, nous remportons pour MyDigitalSchool Nantes, l'Award de la Meilleure Direction Artistique ! À vous de jouer désormais ! 🎮",
     details: {
       softwares: ["godot", "aseprite"],
       role: ["Pitch Deck Manager", "Game Design"],
@@ -70,13 +65,14 @@ export const projectsData: ProjectTypes[] = [
         href: "https://margouillat.itch.io/equinox",
         title: "Tester le jeu",
         color: "cremeBrulee",
+        iconBefore: "controller",
       },
     ],
     date: 8,
   },
   // JEU ENQUETE API
   {
-    id: 3,
+    id: 2,
     path: "jeu-enquete-api",
     category: ["DEVELOPPEMENT"],
     title: "Jeu d'enquête",
@@ -91,22 +87,21 @@ export const projectsData: ProjectTypes[] = [
     details: {
       softwares: ["nodejs", "javascript", "express", "bcrypt", "jwt"],
       role: ["Développement"],
-      team: [""],
-      teamLink: [""],
       school_year: "Bachelor Développement Web - Année 3",
     },
     buttons: [
       {
         href: "https://github.com/orinaya/jeu-enquete-api",
-        title: "Github",
+        title: "Lien Github",
         color: "strawberry",
+        iconBefore: "github",
       },
     ],
     date: 8,
   },
   //HACK.ME
   {
-    id: 4,
+    id: 3,
     path: "hack-me",
     category: ["DEVELOPPEMENT", "DESIGN GRAPHIQUE"],
     title: "HACK.ME",
@@ -116,30 +111,26 @@ export const projectsData: ProjectTypes[] = [
     banner: "hackmeBanner",
     hashtag: "#SeriousGame #EnglishGame",
     big_description:
-      "Cette année, pendant l'espace d'une semaine, nous avons créé en groupe un serious game en anglais sur le thème de la cybersécurité ! Le but du jeu ? 4 cartes de mot de passe faces cachées à protéger à tout prix des cartes pénalités et attaques, et ce, grâce à des cartes bonus. Et grâce à votre carte spécialiste, maîtriser des bonus pour hacker vos adversaires !",
-    first_image: "",
-    second_image: "hackme/hackme-2.jpg",
+      "Cette année, pendant l'espace d'une semaine, nous avons créé en groupe un serious game en anglais sur le thème de la cybersécurité ! Le but du jeu ? 4 cartes de mot de passe faces cachées à protéger à tout prix des cartes pénalités et attaques, et ce, grâce à des cartes bonus. Et grâce à votre carte spécialiste, maîtriser des bonus pour hacker vos adversaires ! (PS: Ce jeu a gagné la deuxième place nationale)",
     details: {
       softwares: ["javascript", "html", "css"],
       role: ["Développement", "Conception"],
       team: ["Emilien Clément", "Lise Soares", "Manon Chapeau"],
-      // teamLink: [
-      //   "https://www.linkedin.com/in/",
-      //   "https://www.linkedin.com/in/",
-      //   "https://www.linkedin.com/in/",
-      // ],
+
       school_year: "Bachelor Développement Web - Année 3",
     },
 
     buttons: [
       {
         href: "https://github.com/orinaya/hack-me-serious-game",
-        title: "Github",
+        title: "Lien Github",
+        iconBefore: "github",
         color: "strawberry",
       },
       {
         href: "https://hack-me-serious-game.vercel.app/",
         title: "Voir le projet",
+        iconBefore: "eye",
         color: "cremeBrulee",
       },
     ],
@@ -147,7 +138,7 @@ export const projectsData: ProjectTypes[] = [
   },
   // PAUSE CONNECT
   {
-    id: 5,
+    id: 4,
     path: "pause-connect",
     title: "Pause Connect",
     category: ["DEVELOPPEMENT", "UX/UI"],
@@ -158,8 +149,7 @@ export const projectsData: ProjectTypes[] = [
     hashtag: "#DéveloppementFront #Maquettage #Marketing",
     big_description:
       "Pause Connect est un projet de sensibilisation à l'addiction aux écrans, réalisé dans le cadre de partiels. Ce site propose des données chiffrées, des conseils pratiques, des défis pour réduire l'utilisation des écrans, ainsi qu'un quiz interactif pour évaluer la dépendance potentielle.",
-    first_image: "pause-connect/pause-connect-1.jpg",
-    second_image: "pause-connect/pause-connect-2.jpg",
+    first_image: "pauseConnectFirstImage",
     details: {
       softwares: ["figma", "html", "css", "vue"],
       role: ["Travail d’équipe", "Développement web", "Maquettage"],
@@ -173,12 +163,14 @@ export const projectsData: ProjectTypes[] = [
     buttons: [
       {
         href: "https://github.com/orinaya/pause-connect",
-        title: "Github",
+        title: "Lien Github",
         color: "strawberry",
+        iconBefore: "github",
       },
       {
         href: "https://pause-connect.vercel.app/",
-        title: "Visiter le site",
+        title: "Voir le projet",
+        iconBefore: "eye",
         color: "cremeBrulee",
       },
     ],
@@ -186,34 +178,34 @@ export const projectsData: ProjectTypes[] = [
   },
   // GHIBLI
   {
-    id: 6,
+    id: 5,
     title: "Ghibli",
     path: "ghibli",
     category: ["DEVELOPPEMENT"],
     description: "Site de films",
     image: "ghibliCover",
-    softwares: ["html", "css", "vue"],
+    softwares: ["vue", "css", "figma"],
     banner: "ghibliBanner",
     hashtag: "#IntégrationWeb #Maquettage",
     big_description:
       "Ce projet a été réalisé dans le cadre du cours du framework Vue.js. Il recense tous les films du Studio Ghibli récupéré grâce à une API Ghibli. Le but, ici, était d'afficher toutes les données et de donner la possibilité de voir le détail d'un film mais également de filtrer et trier les films.",
-    first_image: "ghibli/ghibli-1.jpg",
-    second_image: "ghibli/ghibli-2.jpg",
+    first_image: "ghibliFirstImage",
     details: {
-      softwares: ["figma", "html", "css", "js"],
+      softwares: ["vue", "css", "figma"],
       role: ["Développement front", "Maquettage"],
-      team: [""],
       school_year: "Bachelor Cycle Web et Multimédia - Année 2",
     },
     buttons: [
       {
         href: "https://github.com/orinaya/projet-ghibli",
-        title: "Github",
+        title: "Lien Github",
         color: "strawberry",
+        iconBefore: "github",
       },
       {
         href: "https://projet-ghibli.vercel.app/",
         title: "Voir le projet",
+        iconBefore: "eye",
         color: "cremeBrulee",
       },
     ],
@@ -221,7 +213,7 @@ export const projectsData: ProjectTypes[] = [
   },
   // MAPEACH
   {
-    id: 7,
+    id: 6,
     path: "mapeach",
     category: ["DEVELOPPEMENT", "UX/UI", "MARKETING"],
     title: "MaPeach",
@@ -232,12 +224,10 @@ export const projectsData: ProjectTypes[] = [
     hashtag: "#Innovation #RendezVous",
     big_description:
       "Le sujet ? Proposer un produit ou service innovant. Voici, MaPeach, une application recensant des lieux de rendez-vous à destination des couples perdus dans la routine. Elle permet de vivre de nouvelles aventures ludiquement grâce à une roue vous proposant un choix de lieu. Elle vous mettra au défi pour gagner de superbes badges. Grâce à notre galerie, il sera possible de figer ces moments en de merveilleuses photos et pourquoi pas donner l'envie à d'autres couples de l'utiliser ! ",
-    first_image: "",
-    second_image: "mapeach/mapeach-2.jpg",
     details: {
       softwares: ["figma", "wordpress"],
       role: ["Maquettage", "Création Affiches", "Rédaction de contenus", "Gestion de projet"],
-      team: ["Erwann Michaud de Perier", "Arthur Ploteau", "Louka Lemonnier", "Mathéo Lebéhot"],
+      team: ["Erwann Michaud de Perier", "Arthur Ploteau", "Louka Lemonnier", "Mathéo Lebehot"],
       teamLink: [
         "https://www.linkedin.com/in/erwann-michaud-de-perier-149282268/",
         "https://www.linkedin.com/in/arthur-ploteau-314110234/",
@@ -246,30 +236,22 @@ export const projectsData: ProjectTypes[] = [
       ],
       school_year: "Bachelor Cycle Web et Multimédia - Année 2",
     },
-    // buttons: [
-    //   {
-    //     href: "https://oriane-frouin.mds-nantes.yt/mapeach/",
-    //     title: "Visiter le site",
-    //     color: "verdigris",
-    //   },
-    // ],
     date: 12,
   },
   // PLANTOPIA
   {
-    id: 8,
+    id: 7,
     path: "plantopia",
     category: ["DEVELOPPEMENT", "UX/UI"],
     title: "Plantopia",
     description: "Site e-commerce de plantes",
     image: "plantopiaCover",
-    softwares: ["html", "css", "js"],
+    softwares: ["html", "css", "js", "figma"],
     banner: "plantopiaBanner",
     hashtag: "#IntégrationWeb #Maquettage",
     big_description:
       "Plantopia est un site e-commerce de plantes et fleurs réalisé en duo dans le cadre du cours d’Intégration web. Il présente une page d'accueil, une page recensant toutes les plantes et fleurs, une page détail du produit et une page panier.",
-    first_image: "plantopia/plantopia-1.jpg",
-    second_image: "plantopia/plantopia-2.jpg",
+    first_image: "plantopiaFirstImage",
     details: {
       softwares: ["figma", "html", "css", "js"],
       role: ["Développement web", "Maquettage"],
@@ -280,40 +262,11 @@ export const projectsData: ProjectTypes[] = [
     buttons: [
       {
         href: "https://github.com/orinaya/plantopia",
-        title: "Github",
+        iconBefore: "github",
+        title: "Lien Github",
         color: "strawberry",
       },
     ],
     date: 4,
   },
-  // //LOTR
-  // {
-  //   id: 6,
-  //   path: "le-seigneur-des-anneaux",
-  //   title: "Le Seigneur des Anneaux",
-  //   category: ["DEVELOPPEMENT", "UX/UI"],
-  //   description: "Site de films",
-  //   image: "lotr",
-  //   softwares: ["figma", "php"],
-  //   banner: "lotr/lotr-banner.jpg",
-  //   hashtag: "#POO #MVC",
-  //   big_description:
-  //     "Voici un site recensant les films, personnages et quelques citations du Seigneur des Anneaux",
-  //   first_image: "lotr/lotr-1.jpg",
-  //   second_image: "lotr/lotr-2.jpg",
-  //   details: {
-  //     softwares: ["figma", "php"],
-  //     role: ["Développement web", "Maquettage"],
-  //     team: [""],
-  //     school_year: "Bachelor Cycle Web et Multimédia - Année 2",
-  //   },
-  //   buttons: [
-  //     {
-  //       href: "https://github.com/orinaya/LOTR",
-  //       title: "Voir le projet",
-  //       color: "strawberry",
-  //     },
-  //   ],
-  //   date: 10,
-  // },
 ];
