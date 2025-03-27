@@ -6,7 +6,6 @@ import TitleComponent from "@/components/TitleComponent";
 import ButtonComponent from "@/components/ButtonComponent";
 import FramerMotion from "../Animation/FramerMotion";
 import {useRouter} from "next/navigation";
-import Image from "next/image";
 
 const ProjectsComponent = () => {
   const router = useRouter();
