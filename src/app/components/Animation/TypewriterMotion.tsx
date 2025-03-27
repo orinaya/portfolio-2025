@@ -1,7 +1,7 @@
 "use client";
 import {useState, useEffect} from "react";
 import {motion} from "framer-motion";
-import {TypewriterTypes} from "@/definitions/types";
+import {TypewriterTypes} from "../../definitions/types";
 
 function TypewriterMotion({text, speed = 100, delay = 0, className}: TypewriterTypes) {
   const [displayedText, setDisplayedText] = useState("");

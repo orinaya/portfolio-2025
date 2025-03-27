@@ -1,5 +1,5 @@
 import SkillIcon from "@/components/Skills/SkillIcon";
-import {SkillCategory as SkillCategoryType} from "@/definitions/types";
+import {SkillCategory as SkillCategoryType} from "../../definitions/types";
 
 interface SkillCategoryProps {
   category: SkillCategoryType;

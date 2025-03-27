@@ -1,5 +1,5 @@
 "use client";
-import {hardSkills, langSkills, softSkills} from "@/datas/skillsData";
+import {hardSkills, langSkills, softSkills} from "../../datas/skillsData";
 import SkillCategory from "@/components/Skills/SkillCategory";
 import SoftSkillItem from "@/components/Skills/SoftSkillItem";
 import TitleComponent from "@/components/TitleComponent";

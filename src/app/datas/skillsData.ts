@@ -1,6 +1,6 @@
 // data/skills.ts
 
-import {SkillCategory, SoftSkill} from "@/definitions/types";
+import {SkillCategory, SoftSkill} from "../definitions/types";
 
 export const hardSkills: SkillCategory[] = [
   {

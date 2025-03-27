@@ -1,14 +1,33 @@
 "use client";
 import {useState, useMemo, Fragment} from "react";
-import {projectsData, projectsFiltersData} from "@/datas/projectsData";
+import {projectsData, projectsFiltersData} from "../../datas/projectsData";
 import CardComponent from "@/components/Projects/CardComponent";
 import TitleComponent from "@/components/TitleComponent";
 import ButtonComponent from "@/components/ButtonComponent";
 import FramerMotion from "../Animation/FramerMotion";
+import {useRouter} from "next/navigation";
+import Image from "next/image";
 
 const ProjectsComponent = () => {
+  const router = useRouter();
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [selectedSort] = useState<string>("default");
+
+  // const handleClick = (path: string) => {
+  //   router.push(`/projets/${path}`);
+  // };
+
+  // const selectedSort = "default";
+
+  // const handleClick = (path: string) => {
+  //   router.push(`/projets/${path}`);
+  // };
+
+  const handleClick = (path?: string) => {
+    if (path) {
+      router.push(`/${path}`);
+    }
+  };
 
   const filteredProjects = useMemo(() => {
     let filtered = [...projectsData];
@@ -59,8 +78,8 @@ const ProjectsComponent = () => {
               ))}
             </div>
 
-            <div className="bg-cremeBrulee-800 text-cremeBrulee-300 px-4 py-2 rounded-full text-sm lg:text-base font-semibold">
-              {filteredProjects.length} {filteredProjects.length > 1 ? "projets" : "projet"}
+            <div className="bg-cremeBrulee-800 text-cremeBrulee-300 px-4 py-2 rounded-full text-sm">
+              {filteredProjects.length} {filteredProjects.length > 1 ? "résultats" : "résultat"}
             </div>
           </div>
 
@@ -74,6 +93,8 @@ const ProjectsComponent = () => {
                   image={item.image}
                   softwares={item.softwares}
                   date={item.date}
+                  path={item.path}
+                  onClick={() => handleClick(item.path)}
                 />
               </Fragment>
             ))}

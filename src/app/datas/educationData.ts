@@ -1,4 +1,4 @@
-import {EducationTypes} from "@/definitions/types";
+import {EducationTypes} from "../definitions/types";
 
 export const educationData: EducationTypes[] = [
   {

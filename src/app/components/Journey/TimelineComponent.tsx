@@ -1,9 +1,9 @@
 "use client";
 
 import React, {useState} from "react";
-import {EducationTypes} from "@/definitions/types";
+import {EducationTypes} from "../../definitions/types";
 import TitleComponent from "@/components/TitleComponent";
-import {educationData} from "@/datas/educationData";
+import {educationData} from "../../datas/educationData";
 import FramerMotion from "../Animation/FramerMotion";
 
 function TimelineComponent() {

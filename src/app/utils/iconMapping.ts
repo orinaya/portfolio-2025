@@ -22,6 +22,7 @@ import langFrIcon from "@/assets/icons/lang-fr.svg";
 import langEnIcon from "@/assets/icons/lang-en.svg";
 import godotIcon from "@/assets/icons/godot.svg";
 import wooIcon from "@/assets/icons/woo.svg";
+import nextIcon from "@/assets/icons/nextjs.svg";
 
 type IconProps = {
   src: string;
@@ -38,7 +39,7 @@ const IconMapping: Record<string, IconProps> = {
   html: htmlIcon,
   css: cssIcon,
   react: reactIcon,
-  next: figmaIcon,
+  next: nextIcon,
   vue: vueIcon,
   sass: sassIcon,
   tailwind: tailwindIcon,

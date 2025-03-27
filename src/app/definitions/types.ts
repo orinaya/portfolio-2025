@@ -26,8 +26,10 @@ export type EducationTypes = {
 };
 
 export type TitleProps = {
-  uptitle: string;
+  uptitle?: string;
   title: string;
+  downtitle?: string;
+  small?: boolean;
 };
 
 export interface SkillItem {
@@ -52,7 +54,7 @@ export interface ProjectFilterTypes {
   icon: string;
 }
 export interface ProjectTypes {
-  // onClick?: (event: React.MouseEvent<HTMLElement>) => void;
+  onClick?: (event: React.MouseEvent<HTMLElement>) => void;
   id: number;
   path?: string;
   category?: string[];
