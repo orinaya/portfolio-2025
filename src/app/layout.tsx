@@ -14,8 +14,6 @@ export const metadata: Metadata = {
   keywords: "Portfolio, Alternance, Développement Web, Front-end, Back-end",
 };
 
-<title>Oriane Frouin | Portfolio</title>;
-
 export default function RootLayout({
   children,
 }: Readonly<{
